@@ -1,0 +1,400 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logistiki & D&B | Inteligência Contábil e Tecnologia em Brasília</title>
+    
+    <meta name="description" content="Contabilidade em Brasília especializada em Gestão Fiscal, Contabilidade Eleitoral, Terceiro Setor e BPO Financeiro. Atendimento estratégico para empresas e candidatos no DF.">
+    <meta property="og:title" content="Logistiki & D&B | Contabilidade Estratégica em Brasília">
+    <meta property="og:description" content="Gestão Fiscal, Eleitoral e Empresarial com precisão técnica e segurança jurídica em Brasília.">
+    <meta property="og:url" content="https://www.logistiki.com.br/">
+    <meta property="og:image" content="https://www.logistiki.com.br/imagem-preview.jpg">
+    <meta property="og:type" content="website">
+    <link rel="canonical" href="https://www.logistiki.com.br/">
+
+    <link rel="preload" as="image" href="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1920&q=80">
+    <link rel="preload" as="image" href="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1920&q=80">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body { font-family: 'Montserrat', sans-serif; }
+        h1, h2, h3 { font-family: 'Playfair Display', serif; }
+        
+        .hero-gradient {
+            background: linear-gradient(rgba(10, 25, 47, 0.75), rgba(10, 25, 47, 0.75)), 
+                        url('https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1920&q=80') no-repeat center center;
+            background-size: cover;
+        }
+
+        .servicos-bg {
+            background: linear-gradient(rgba(10, 25, 47, 0.94), rgba(10, 25, 47, 0.94)), 
+                        url('https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1920&q=80') no-repeat center center;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        /* Estilos do Menu Dropdown */
+        .dropdown:hover .dropdown-menu { display: block; }
+        .dropdown-menu { display: none; }
+
+        #mobile-menu {
+            transition: all 0.3s ease-in-out;
+            opacity: 0;
+            pointer-events: none;
+            transform: translateY(-10px);
+        }
+        #mobile-menu.active {
+            opacity: 1;
+            pointer-events: auto;
+            transform: translateY(0);
+        }
+
+        .text-gold { color: #C5A059; }
+        .bg-navy { background-color: #0A192F; }
+        .border-gold { border-color: #C5A059; }
+        .bg-gold { background-color: #C5A059; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 overflow-x-hidden">
+
+    <nav class="fixed w-full z-[100] bg-[#0A192F]/95 backdrop-blur-md border-b border-[#C5A059]/20 py-4 shadow-lg">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <span class="text-gold font-bold text-2xl tracking-tighter">LOGISTIKI</span>
+                <span class="text-white font-light text-2xl">&</span>
+                <span class="text-white font-bold text-2xl tracking-tighter">D&B</span>
+            </div>
+            
+            <div class="hidden md:flex space-x-8 text-white text-xs uppercase tracking-widest font-bold items-center">
+                <a href="#sobre" class="hover:text-[#C5A059] transition">A União</a>
+                
+                <div class="relative dropdown group">
+                    <button class="flex items-center hover:text-[#C5A059] transition uppercase tracking-widest font-bold">
+                        Soluções <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="dropdown-menu absolute left-0 mt-0 w-72 bg-[#0A192F] border border-[#C5A059]/30 rounded-b-lg shadow-2xl overflow-hidden">
+                        <div class="p-4 space-y-4">
+                            <div>
+                                <p class="text-[9px] text-[#C5A059] mb-2 border-b border-gold/20 pb-1">Serviços de Gestão</p>
+                                <a href="contabilidade-consultiva-brasilia.html" class="block py-1 hover:text-[#C5A059] transition text-[10px]">Contabilidade Consultiva</a>
+                                <a href="gestao-fiscal.html" class="block py-1 hover:text-[#C5A059] transition text-[10px]">Gestão Fiscal & Tributária</a>
+                                <a href="apoio-administrativo.html" class="block py-1 hover:text-[#C5A059] transition text-[10px]">Apoio Administrativo</a>
+                                <a href="folha-pagamento.html" class="block py-1 hover:text-[#C5A059] transition text-[10px]">Folha de Pagamento (DP)</a>
+                            </div>
+                            <div>
+                                <p class="text-[9px] text-[#C5A059] mb-2 border-b border-gold/20 pb-1">Soluções Especializadas</p>
+                                <a href="bpo-financeiro.html" class="block py-1 hover:text-[#C5A059] transition text-[10px]">BPO Financeiro</a>
+                                <a href="contabilidade-eleitoral.html" class="block py-1 hover:text-[#C5A059] transition text-[10px]">Contabilidade Eleitoral (SPCA)</a>
+                                <a href="terceiro-setor.html" class="block py-1 hover:text-[#C5A059] transition text-[10px]">Terceiro Setor</a>
+                                <a href="sistema-erp.html" class="block py-1 hover:text-[#C5A059] transition text-[10px]">SISTEMA ERP</a>
+                                <a href="kit-pdv.html" class="block py-1 hover:text-[#C5A059] transition text-[10px]">KIT PDV</a>
+                            </div>
+                            <div>
+                                <p class="text-[9px] text-[#C5A059] mb-2 border-b border-gold/20 pb-1">Legalização</p>
+                                <a href="abertura-regularizacao.html" class="block py-1 hover:text-[#C5A059] transition text-[10px]">Abertura e Regularização</a>
+                                <a href="certificado-digital.html" class="block py-1 hover:text-[#C5A059] transition text-[10px]">Certificado Digital</a>
+                                <a href="licenciamento.html" class="block py-1 hover:text-[#C5A059] transition text-[10px]">Licenciamento</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="#especialidades" class="hover:text-[#C5A059] transition">Atuação</a>
+                <a href="#faq" class="hover:text-[#C5A059] transition">FAQ</a>
+                <a href="https://wa.me/5561981901379" target="_blank" rel="noopener" class="bg-[#C5A059] px-5 py-2 rounded text-[#0A192F] hover:bg-white transition-all duration-300">Contato</a>
+            </div>
+
+            <button id="menu-toggle" class="md:hidden text-gold focus:outline-none" aria-label="Abrir menu">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </div>
+    </nav>
+
+    <div id="mobile-menu" class="fixed top-0 left-0 w-full h-screen bg-[#0A192F] z-[90] flex flex-col justify-center items-center p-10 md:hidden overflow-y-auto">
+        <div class="flex flex-col space-y-6 text-center text-white font-bold uppercase tracking-widest">
+            <a href="#sobre" class="mobile-link text-xl">A União</a>
+            <a href="#especialidades" class="mobile-link text-xl">Atuação</a>
+            <a href="#servicos" class="mobile-link text-xl text-gold">Serviços</a>
+            <a href="#faq" class="mobile-link text-xl">FAQ</a>
+            <a href="https://wa.me/5561981901379" target="_blank" rel="noopener" class="text-gold border border-gold py-4 px-10 rounded">Contato</a>
+        </div>
+    </div>
+
+    <section class="min-h-screen flex items-center justify-center hero-gradient text-center px-6 pt-20">
+        <div class="max-w-5xl">
+            <span class="text-gold uppercase tracking-[0.3em] text-sm font-bold mb-4 block animate-pulse">Excelência na Capital Federal</span>
+            <h1 class="text-4xl md:text-6xl lg:text-7xl text-white mb-6 leading-tight drop-shadow-lg">
+                Inteligência Contábil e Gestão Fiscal em Brasília<br>
+                <span class="text-gold italic">Para Empresas, Políticos e Terceiro Setor</span>
+            </h1>
+            <p class="text-lg md:text-xl text-gray-200 mb-10 max-w-2xl mx-auto font-light leading-relaxed">
+                Logistiki & D&B: Especialistas em contabilidade empresarial, eleitoral e gestão estratégica em Brasília.
+            </p>
+            <div class="flex flex-col md:flex-row justify-center gap-6">
+                <a href="#servicos" class="bg-gold text-[#0A192F] px-10 py-4 rounded-full font-bold hover:shadow-[0_0_20px_rgba(197,160,89,0.5)] transform hover:-translate-y-1 transition-all">Nossos Serviços</a>
+                <a href="#especialidades" class="border border-white/30 text-white px-10 py-4 rounded-full font-bold hover:bg-white hover:text-[#0A192F] transform hover:-translate-y-1 transition-all">Áreas de Atuação</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre" class="py-24 bg-white overflow-hidden">
+        <div class="container mx-auto px-6 lg:px-20">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div class="order-2 md:order-1">
+                    <h2 class="text-4xl mb-8 leading-snug">Duas Marcas, Um Compromisso: <br><span class="text-gold">A Sua Conformidade.</span></h2>
+                    <p class="text-slate-600 mb-6 text-lg leading-relaxed text-justify">
+                        Na <strong>LOGISTIKI Gestão & Inteligência Contábil</strong>, acreditamos que a contabilidade deve ser o motor da sua empresa, não apenas uma obrigação. Nosso nome reflete nossa essência: a aplicação da Lógica e da Estratégia aos seus números.
+                    </p>
+                    <p class="text-slate-600 mb-8 text-lg leading-relaxed text-justify">
+                        Para oferecer uma solução 360°, unimos nossa expertise contábil à <strong>D&B</strong>, nossa divisão de tecnologia e suporte. Enquanto a Logistiki cuida da sua saúde tributária e das complexas prestações de contas, a D&B fornece as ferramentas de automação, certificados digitais e o apoio administrativo necessário para o dia a dia. Juntos, entregamos em Brasília um ecossistema completo de gestão para empresas, políticos e o Terceiro Setor.
+                    </p>
+                </div>
+                <div class="relative group order-1 md:order-2">
+                    <div class="absolute -inset-4 bg-gold/10 rounded-xl group-hover:bg-gold/20 transition-all duration-700"></div>
+                    <div class="relative bg-[#0A192F] p-10 md:p-14 rounded-xl border border-gold/30 shadow-2xl text-center transform group-hover:scale-[1.02] transition-all duration-500">
+                        <p class="text-white text-xl md:text-2xl italic font-light leading-relaxed">
+                            "Combinamos contabilidade de precisão com suporte tecnológico de ponta para garantir sua segurança jurídica e digital em Brasília."
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="especialidades" class="py-24 bg-slate-50">
+        <div class="container mx-auto px-6 lg:px-20">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl mb-4 italic text-[#0A192F]">Áreas em que <span class="text-[#C5A059]">Atuamos</span></h2>
+                <div class="w-24 h-1 bg-[#C5A059] mx-auto mt-4"></div>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="group p-8 bg-white border border-slate-100 rounded-xl text-center hover:bg-[#0A192F] transition-all duration-500 shadow-sm hover:shadow-xl">
+                    <div class="text-4xl mb-4 transform group-hover:scale-110 transition-transform">🏢</div>
+                    <h3 class="text-[#0A192F] font-bold text-sm uppercase group-hover:text-[#C5A059]">Gestão Fiscal</h3>
+                    <p class="text-xs text-slate-500 mt-2 group-hover:text-white">Constituição e consultoria para a Reforma Tributária.</p>
+                </div>
+                <div class="group p-8 bg-white border border-slate-100 rounded-xl text-center hover:bg-[#0A192F] transition-all duration-500 shadow-sm hover:shadow-xl">
+                    <div class="text-4xl mb-4 transform group-hover:scale-110 transition-transform">⚙️</div>
+                    <h3 class="text-[#0A192F] font-bold text-sm uppercase group-hover:text-[#C5A059]">Automação Comercial</h3>
+                    <p class="text-xs text-slate-500 mt-2 group-hover:text-white">Sistemas ERP e suporte tecnológico operacional.</p>
+                </div>
+                <div class="group p-8 bg-white border border-slate-100 rounded-xl text-center hover:bg-[#0A192F] transition-all duration-500 shadow-sm hover:shadow-xl">
+                    <div class="text-4xl mb-4 transform group-hover:scale-110 transition-transform">⚖️</div>
+                    <h3 class="text-[#0A192F] font-bold text-sm uppercase group-hover:text-[#C5A059]">Eleitoral & 3º Setor</h3>
+                    <p class="text-xs text-slate-500 mt-2 group-hover:text-white">SPCA e contabilidade especializada para ONGs e partidos.</p>
+                </div>
+                <div class="group p-8 bg-white border border-slate-100 rounded-xl text-center hover:bg-[#0A192F] transition-all duration-500 shadow-sm hover:shadow-xl">
+                    <div class="text-4xl mb-4 transform group-hover:scale-110 transition-transform">📈</div>
+                    <h3 class="text-[#0A192F] font-bold text-sm uppercase group-hover:text-[#C5A059]">BPO Financeiro</h3>
+                    <p class="text-xs text-slate-500 mt-2 group-hover:text-white">Gestão financeira completa e fluxo de caixa.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicos" class="py-24 servicos-bg text-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-20">
+                <h2 class="text-4xl mb-4 italic text-gold">Serviços Prestados</h2>
+                <div class="w-24 h-1 bg-gold mx-auto"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12 text-justify">
+                <div class="space-y-12">
+                    <div class="border-l-4 border-gold pl-6 bg-[#0A192F]/60 p-8 rounded-r-xl backdrop-blur-md">
+                        <h3 class="text-gold text-xl font-bold uppercase mb-4">1. Contabilidade Consultiva e Gestão Fiscal</h3>
+                        <ul class="space-y-4 text-sm text-slate-200">
+                            <li class="flex items-start"><span class="text-gold mr-2">▪</span><span><strong>Constituição e Regularização:</strong> Abertura, alteração e baixa de empresas.</span></li>
+                            <li class="flex items-start"><span class="text-gold mr-2">▪</span><span><strong>Gestão Fiscal:</strong> Apuração de impostos e consultoria para a Reforma Tributária.</span></li>
+                            <li class="flex items-start"><span class="text-gold mr-2">▪</span><span><strong>Folha de Pagamento (DP):</strong> Gestão completa de RH e obrigações do eSocial.</span></li>
+                            <li class="flex items-start"><span class="text-gold mr-2">▪</span><span><strong>Pessoa Física:</strong> Declaração de IRPF e análise de variação patrimonial.</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="border-l-4 border-gold pl-6 bg-[#0A192F]/60 p-8 rounded-r-xl backdrop-blur-md">
+                        <h3 class="text-gold text-xl font-bold uppercase mb-4">2. Tecnologia e Suporte (D&B) ⚙️</h3>
+                        <ul class="space-y-4 text-sm text-slate-200">
+                            <li class="flex items-start"><span class="text-gold mr-2">▪</span><span><strong>Automação Comercial:</strong> Implementação de ERP e desenhos de fluxos para vendas e estoque.</span></li>
+                            <li class="flex items-start"><span class="text-gold mr-2">▪</span><span><strong>Certificado Digital:</strong> Emissão de e-CPF e e-CNPJ com suporte na instalação.</span></li>
+                            <li class="flex items-start"><span class="text-gold mr-2">▪</span><span><strong>Apoio Administrativo:</strong> Treinamento e suporte para otimização de rotinas operacionais.</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="space-y-12">
+                    <div class="border-l-4 border-gold pl-6 bg-[#0A192F]/60 p-8 rounded-r-xl backdrop-blur-md">
+                        <h3 class="text-gold text-xl font-bold uppercase mb-4">3. Especialidades: Terceiro Setor e Eleitoral</h3>
+                        <ul class="space-y-4 text-sm text-slate-200">
+                            <li class="flex items-start"><span class="text-gold mr-2">▪</span><span><strong>Terceiro Setor:</strong> Foco em imunidades e isenções para ONGs e fundações.</span></li>
+                            <li class="flex items-start"><span class="text-gold mr-2">▪</span><span><strong>Contabilidade Eleitoral (SPCA):</strong> Prestação de contas rigorosa (TSE/TRE).</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="border-l-4 border-gold pl-6 bg-[#0A192F]/60 p-8 rounded-r-xl backdrop-blur-md">
+                        <h3 class="text-gold text-xl font-bold uppercase mb-4">4. BPO Financeiro 📊</h3>
+                        <ul class="space-y-4 text-sm text-slate-200">
+                            <li class="flex items-start"><span class="text-gold mr-2">▪</span><span><strong>Contas a Pagar e Receber:</strong> Gestão de pagamentos e controle de recebimentos.</span></li>
+                            <li class="flex items-start"><span class="text-gold mr-2">▪</span><span><strong>Fluxo de Caixa:</strong> Gráficos de monitoramento e projeção financeira para tomada de decisão.</span></li>
+                            <li class="flex items-start"><span class="text-gold mr-2">▪</span><span><strong>Conciliação Bancária:</strong> Conferência diária de saldos e emissão de notas/boletos.</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="py-24 bg-white">
+        <div class="container mx-auto px-6 max-w-5xl">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl mb-4 italic text-navy">Perguntas <span class="text-gold">Frequentes</span></h2>
+                <p class="text-slate-500 uppercase tracking-widest text-xs font-bold">Respostas rápidas para sua gestão em Brasília</p>
+                <div class="w-24 h-1 bg-gold mx-auto mt-4"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="space-y-6">
+                    <div class="p-6 bg-slate-50 rounded-lg border-l-4 border-gold shadow-sm hover:shadow-md transition-all text-justify">
+                        <h4 class="font-bold text-navy mb-2">Fui desenquadrado do MEI, e agora?</h4>
+                        <p class="text-gray-600 text-sm leading-relaxed">A Logistiki resolve: O desenquadramento exige uma transição rápida para Microempresa (ME) para evitar multas. Nós cuidamos de todo o processo de migração e escolha do novo regime tributário.</p>
+                    </div>
+
+                    <div class="p-6 bg-slate-50 rounded-lg border-l-4 border-gold shadow-sm hover:shadow-md transition-all text-justify">
+                        <h4 class="font-bold text-navy mb-2">Preciso contratar uma empregada doméstica. Como proceder?</h4>
+                        <p class="text-gray-600 text-sm leading-relaxed">A Logistiki soluciona: A gestão do eSocial Doméstico exige cuidado. Nós realizamos desde o cadastro até a emissão mensal das guias DAE, férias e 13º salário, com total segurança jurídica.</p>
+                    </div>
+
+                    <div class="p-6 bg-slate-50 rounded-lg border-l-4 border-gold shadow-sm hover:shadow-md transition-all text-justify">
+                        <h4 class="font-bold text-navy mb-2">Como a Reforma Tributária afeta minha empresa em 2026?</h4>
+                        <p class="text-gray-600 text-sm leading-relaxed">A Logistiki orienta: A transição já impacta o planejamento. Nós analisamos seu setor e desenhamos sua estratégia tributária para garantir conformidade e economia.</p>
+                    </div>
+
+                    <div class="p-6 bg-slate-50 rounded-lg border-l-4 border-gold shadow-sm hover:shadow-md transition-all text-justify">
+                        <h4 class="font-bold text-navy mb-2">O que é o SPCA e por que preciso de um contador especializado?</h4>
+                        <p class="text-gray-600 text-sm leading-relaxed">A Logistiki é especialista: O SPCA é obrigatório. Erros podem levar à desaprovação das contas e à inelegibilidade. Nossa equipe garante rigor técnico e cumprimento de todos os prazos eleitorais.</p>
+                    </div>
+
+                    <div class="p-6 bg-slate-50 rounded-lg border-l-4 border-gold shadow-sm hover:shadow-md transition-all text-justify">
+                        <h4 class="font-bold text-navy mb-2">O que é um sistema ERP e por que minha empresa precisa de um?</h4>
+                        <p class="text-gray-600 text-sm leading-relaxed"> O ERP é um software que centraliza toda a gestão do seu negócio. Ele integra vendas, estoque e financeiro em um só lugar, evitando erros manuais, agilizando a emissão de notas e permitindo que você tenha relatórios reais sobre o lucro da sua empresa.</p>
+                    </div>
+                </div>
+
+                <div class="space-y-6">
+                    <div class="p-6 bg-slate-50 rounded-lg border-l-4 border-gold shadow-sm hover:shadow-md transition-all text-justify">
+                        <h4 class="font-bold text-navy mb-2">Minha ONG ou Associação precisa de contabilidade específica?</h4>
+                        <p class="text-gray-600 text-sm leading-relaxed">A Logistiki atende: Sim! O Terceiro Setor possui regras próprias de imunidade e isenção. Garantimos conformidade com o fisco e transparência nas prestações de contas.</p>
+                    </div>
+
+                    <div class="p-6 bg-slate-50 rounded-lg border-l-4 border-gold shadow-sm hover:shadow-md transition-all text-justify">
+                        <h4 class="font-bold text-navy mb-2">Preciso de um sistema de vendas e certificado digital urgente. A D&B ajuda?</h4>
+                        <p class="text-gray-600 text-sm leading-relaxed">A D&B agiliza: Sim. Além do Certificado Digital rápido, instalamos a automação comercial ideal para o seu negócio e oferecemos o apoio administrativo necessário.</p>
+                    </div>
+
+                    <div class="p-6 bg-slate-50 rounded-lg border-l-4 border-gold shadow-sm hover:shadow-md transition-all text-justify">
+                        <h4 class="font-bold text-navy mb-2">A Logistiki também ajuda na organização do meu financeiro diário?</h4>
+                        <p class="text-gray-600 text-sm leading-relaxed">Sim. Oferecemos o suporte de BPO Financeiro para contas a pagar, receber e conciliação bancária, integrando tudo ao seu fechamento contábil.</p>
+                    </div>
+
+                    <div class="p-6 bg-slate-50 rounded-lg border-l-4 border-gold shadow-sm hover:shadow-md transition-all text-justify">
+                        <h4 class="font-bold text-navy mb-2">Eu já tenho um sistema, a D&B ajuda na migração ou configuração?</h4>
+                        <p class="text-gray-600 text-sm leading-relaxed">Sim! Nós não apenas entregamos o software, mas oferecemos o Apoio Administrativo para configurar as regras do seu negócio, treinar sua equipe e garantir que a automação comercial funcione de forma eficiente desde o primeiro dia.</p>
+                    </div>                    
+
+                    <div class="p-10 bg-[#0A192F] rounded-lg border border-gold/30 text-center shadow-xl">
+                        <p class="text-gold font-bold mb-6">Ainda tem dúvidas?</p>
+                        <a href="https://wa.me/5561981901379" target="_blank" rel="noopener" class="inline-block bg-gold text-[#0A192F] px-8 py-3 rounded-full font-bold hover:bg-white transition-all shadow-lg">Falar no WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-[#081426] border-t border-[#C5A059]/30 py-20 text-gray-300">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-16 text-center md:text-left">
+                <div class="space-y-6">
+                    <div class="flex items-center justify-center md:justify-start space-x-3">
+                        <span class="text-[#C5A059] font-bold text-2xl tracking-tight">LOGISTIKI</span>
+                        <span class="text-white font-light text-2xl">|</span>
+                        <span class="text-white font-bold text-2xl tracking-tight">D&B</span>
+                    </div>
+                    <p class="text-xs uppercase tracking-[0.3em] text-[#C5A059] font-semibold">Inteligência Contábil & Tecnologia</p>
+                    <div class="w-12 h-[1px] bg-[#C5A059]/40 mx-auto md:mx-0"></div>
+                    <p class="text-sm text-gray-400 leading-relaxed max-w-xs mx-auto md:mx-0">Estrutura técnica especializada para empresas, setor político e Terceiro Setor em Brasília.</p>
+                </div>
+
+                <div class="space-y-6 text-justify">
+                    <h5 class="text-white font-semibold uppercase text-xs tracking-[0.3em]">Contato</h5>
+                    <div class="space-y-4 text-sm">
+                        <a href="mailto:logistiki@logistiki-contabil.com.br" class="block hover:text-[#C5A059] transition">logistiki@logistiki-contabil.com.br</a>
+                        <a href="https://wa.me/5561981901379" target="_blank" rel="noopener" class="block hover:text-[#25D366] transition">(61) 98190-1379</a>
+                        <div class="pt-4 border-t border-white/10 space-y-3">
+                            <p class="text-xs uppercase tracking-widest text-gray-500">Automação Comercial</p>
+                            <a href="https://wa.me/5561993905938" target="_blank" rel="noopener" class="block hover:text-[#25D366] transition">(61) 99390-5938</a>
+                        </div>
+                        <div class="pt-6">
+                            <a href="https://instagram.com/dbapoioadministrativo" target="_blank" rel="noopener" class="inline-block px-6 py-2 text-xs font-semibold uppercase tracking-widest border border-[#C5A059]/40 text-[#C5A059] hover:bg-[#C5A059] hover:text-[#081426] transition-all duration-300">Instagram</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-y-6">
+                    <h5 class="text-white font-semibold uppercase text-xs tracking-[0.3em]">Endereço</h5>
+                    <p class="text-sm text-gray-400 leading-relaxed text-justify">SRTVN, Bloco P, Sala 19<br>Ed. Brasília Radio Center<br>Asa Norte, Brasília/DF – CEP 70.719-000</p>
+                    <div class="pt-6 border-t border-white/10">
+                        <p class="text-xs text-gray-500 uppercase tracking-widest">Atendimento</p>
+                        <p class="text-sm text-gray-400 mt-2 text-justify">Segunda a Sexta<br>09h às 18h</p>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-16 pt-8 border-t border-[#C5A059]/20 text-center text-xs text-gray-500 tracking-wider">
+                © 2026 Logistiki & D&B. Todos os direitos reservados.
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/5561981901379" target="_blank" rel="noopener" class="fixed bottom-6 right-6 z-[110] bg-[#25D366] p-4 rounded-full shadow-2xl hover:scale-110 active:scale-95 transition-all duration-300 group" aria-label="Contato via WhatsApp">
+        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.108 2.122-.066 1.107.322 2.198.702 3.033.38.835 1.572 2.503 3.328 3.253.418.179.744.286 1.001.367.419.133.801.114 1.102.07.336-.05 1.04-.425 1.187-.835.147-.409.147-.76.103-.835-.045-.075-.165-.119-.462-.268zM12.116 21.993c-1.623 0-3.21-.424-4.598-1.227l-.33-.192-3.419.897.913-3.333-.21-.334c-.883-1.405-1.349-3.036-1.349-4.706 0-4.947 4.024-8.972 8.973-8.972 2.41 0 4.673.939 6.375 2.642a8.91 8.91 0 0 1 2.64 6.375c0 4.948-4.024 8.972-8.973 8.972z"></path>
+        </svg>
+        <span class="absolute right-full mr-4 top-1/2 -translate-y-1/2 bg-white text-[#0A192F] text-xs font-bold px-3 py-1 rounded shadow-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">Fale Conosco</span>
+    </a>
+
+    <script>
+        const btn = document.getElementById('menu-toggle');
+        const menu = document.getElementById('mobile-menu');
+        const links = document.querySelectorAll('.mobile-link');
+        function toggleMenu() { menu.classList.toggle('active'); document.body.classList.toggle('overflow-hidden'); }
+        btn.addEventListener('click', toggleMenu);
+        links.forEach(link => link.addEventListener('click', toggleMenu));
+        
+        const schema = {
+            "@context": "https://schema.org",
+            "@type": "AccountingService",
+            "name": "Logistiki & D&B",
+            "url": "https://www.logistiki.com.br/",
+            "logo": "https://www.logistiki.com.br/logo.png",
+            "image": "https://www.logistiki.com.br/imagem-preview.jpg",
+            "telephone": "+5561993905938",
+            "areaServed": "Brasília",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "SRTVN, Bloco P, Sala 19",
+                "addressLocality": "Brasília",
+                "addressRegion": "DF",
+                "postalCode": "70719-000",
+                "addressCountry": "BR"
+            },
+            "sameAs": ["https://instagram.com/dbapoioadministrativo"]
+        };
+        const script = document.createElement('script');
+        script.type = 'application/ld+json';
+        script.text = JSON.stringify(schema);
+        document.head.appendChild(script);
+    </script>
+</body>
+</html>
+
