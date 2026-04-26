@@ -65,5 +65,9 @@ node_modules/
 # dotenv environment variables file
 .env
 
+# Local Codex workspace data
+.codex
+.codex/
+
 # dataconnect generated files
 .dataconnect

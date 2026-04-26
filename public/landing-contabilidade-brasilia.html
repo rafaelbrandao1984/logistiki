@@ -11,7 +11,8 @@
     <meta property="og:image" content="https://www.logistiki.com.br/imagem-preview.jpg">
     <meta property="og:type" content="website">
     <link rel="canonical" href="https://www.logistiki.com.br/landing-contabilidade-brasilia.html">
-    <link rel="icon" type="image/png" href="D&B01.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <meta name="robots" content="index,follow">
     <meta name="twitter:card" content="summary_large_image">
 
@@ -192,7 +193,7 @@
                     <textarea id="mensagem" name="mensagem" rows="3" class="w-full rounded-lg px-4 py-3 text-slate-900" placeholder="Ex.: preciso regularizar impostos e organizar meu financeiro."></textarea>
                 </div>
                 <p class="text-xs text-slate-300">Ao enviar, você concorda em ser contatado para proposta comercial.</p>
-                <button type="submit" class="w-full bg-gold text-[#0A192F] py-4 rounded-lg font-bold hover:bg-white transition" data-track-event="submit_lead_form">Enviar e iniciar contato pelo WhatsApp</button>
+                <button id="lead-submit" type="submit" class="w-full bg-gold text-[#0A192F] py-4 rounded-lg font-bold hover:bg-white transition disabled:opacity-70 disabled:cursor-not-allowed" data-track-event="submit_lead_form">Enviar e iniciar contato pelo WhatsApp</button>
             </form>
             <p class="text-center text-sm text-slate-300 mt-6">
                 Prefere falar direto? <a href="https://wa.me/5561981901379?text=Ol%C3%A1%2C%20vim%20da%20landing%20de%20Google%20Ads%20e%20quero%20uma%20proposta." target="_blank" rel="noopener" data-track-event="click_whatsapp_form" class="underline text-gold">Clique aqui no WhatsApp</a>.
@@ -235,6 +236,7 @@
     <script>
         const leadForm = document.getElementById('lead-form');
         const waNumber = '5561981901379';
+        const leadSubmit = document.getElementById('lead-submit');
         const leadWebhookUrl = '';
 
         const trackEvent = (eventName, eventProps = {}) => {
@@ -260,6 +262,9 @@
 
         leadForm.addEventListener('submit', async function (event) {
             event.preventDefault();
+            leadSubmit.disabled = true;
+            const originalSubmitText = leadSubmit.textContent;
+            leadSubmit.textContent = 'Abrindo WhatsApp...';
 
             const nome = document.getElementById('nome').value.trim();
             const telefone = document.getElementById('telefone').value.trim();
@@ -290,15 +295,14 @@
             });
 
             if (leadWebhookUrl) {
-                try {
-                    await fetch(leadWebhookUrl, {
+                fetch(leadWebhookUrl, {
                         method: 'POST',
                         headers: { 'Content-Type': 'application/json' },
                         body: JSON.stringify(payload)
+                    })
+                    .catch((error) => {
+                        console.error('Falha ao enviar lead para webhook:', error);
                     });
-                } catch (error) {
-                    console.error('Falha ao enviar lead para webhook:', error);
-                }
             }
 
             const texto = [
@@ -312,6 +316,10 @@
 
             const waUrl = 'https://wa.me/' + waNumber + '?text=' + encodeURIComponent(texto);
             window.open(waUrl, '_blank', 'noopener');
+            setTimeout(() => {
+                leadSubmit.disabled = false;
+                leadSubmit.textContent = originalSubmitText;
+            }, 1200);
         });
     </script>
 </body>

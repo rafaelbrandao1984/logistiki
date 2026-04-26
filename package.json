@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "echo 'Preparando arquivos para o Firebase...'",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npm run validate",
+    "test": "npm run validate",
+    "validate": "node scripts/validate-site.js"
   },
   "repository": {
     "type": "git",

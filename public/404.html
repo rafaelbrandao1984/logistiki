@@ -1,33 +1,145 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Page Not Found</title>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex,follow">
+    <title>Página não encontrada | Logistiki & D&B</title>
+    <meta name="description" content="A página solicitada não foi encontrada. Acesse a Logistiki & D&B para falar com especialistas em contabilidade e gestão fiscal em Brasília.">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <style>
+        :root {
+            color-scheme: light;
+            --navy: #0A192F;
+            --gold: #C5A059;
+            --ink: #0f172a;
+            --muted: #64748b;
+            --paper: #f8fafc;
+        }
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px 16px; border-radius: 3px; }
-      #message h3 { color: #888; font-weight: normal; font-size: 16px; margin: 16px 0 12px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
+        * { box-sizing: border-box; }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            font-family: Montserrat, Arial, sans-serif;
+            color: var(--ink);
+            background:
+                linear-gradient(rgba(10, 25, 47, 0.78), rgba(10, 25, 47, 0.88)),
+                url("imagem-preview.jpg") center/cover no-repeat;
+            display: grid;
+            place-items: center;
+            padding: 32px 20px;
+        }
+
+        main {
+            width: min(100%, 760px);
+            background: rgba(255, 255, 255, 0.96);
+            border: 1px solid rgba(197, 160, 89, 0.35);
+            border-radius: 8px;
+            box-shadow: 0 24px 80px rgba(0, 0, 0, 0.28);
+            padding: clamp(32px, 6vw, 64px);
+            text-align: center;
+        }
+
+        .brand {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--navy);
+            font-weight: 800;
+            letter-spacing: -0.04em;
+            text-transform: uppercase;
+            margin-bottom: 28px;
+        }
+
+        .brand span:first-child { color: var(--gold); }
+
+        .code {
+            color: var(--gold);
+            font-size: 0.8rem;
+            font-weight: 800;
+            letter-spacing: 0.28em;
+            text-transform: uppercase;
+        }
+
+        h1 {
+            margin: 12px 0 16px;
+            color: var(--navy);
+            font-family: Georgia, "Times New Roman", serif;
+            font-size: clamp(2.2rem, 6vw, 4.5rem);
+            line-height: 1;
+        }
+
+        p {
+            max-width: 560px;
+            margin: 0 auto 28px;
+            color: var(--muted);
+            font-size: 1.05rem;
+            line-height: 1.7;
+        }
+
+        .actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 14px;
+            justify-content: center;
+        }
+
+        a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 48px;
+            padding: 0 22px;
+            border-radius: 999px;
+            font-weight: 800;
+            text-decoration: none;
+            transition: transform 160ms ease, background 160ms ease, color 160ms ease;
+        }
+
+        a:hover { transform: translateY(-1px); }
+
+        .primary {
+            background: var(--gold);
+            color: var(--navy);
+        }
+
+        .secondary {
+            border: 1px solid rgba(10, 25, 47, 0.2);
+            color: var(--navy);
+            background: white;
+        }
+
+        @media (max-width: 520px) {
+            body { padding: 0; }
+            main {
+                min-height: 100vh;
+                border-radius: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            .actions { flex-direction: column; }
+            a { width: 100%; }
+        }
     </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>404</h2>
-      <h1>Page Not Found</h1>
-      <p>The specified file was not found on this website. Please check the URL for mistakes and try again.</p>
-      <h3>Why am I seeing this?</h3>
-      <p>This page was generated by the Firebase Command-Line Interface. To modify it, edit the <code>404.html</code> file in your project's configured <code>public</code> directory.</p>
-    </div>
-  </body>
+</head>
+<body>
+    <main>
+        <div class="brand" aria-label="Logistiki e D&B">
+            <span>Logistiki</span>
+            <span>&amp;</span>
+            <span>D&amp;B</span>
+        </div>
+        <div class="code">Erro 404</div>
+        <h1>Página não encontrada</h1>
+        <p>O endereço pode ter mudado ou sido digitado incorretamente. Você pode voltar para a página inicial ou falar com nossa equipe pelo WhatsApp.</p>
+        <div class="actions">
+            <a class="primary" href="/">Voltar para o início</a>
+            <a class="secondary" href="https://wa.me/5561981901379?text=Ol%C3%A1%2C%20encontrei%20uma%20p%C3%A1gina%20404%20no%20site%20e%20preciso%20de%20atendimento." target="_blank" rel="noopener">Falar no WhatsApp</a>
+        </div>
+    </main>
+</body>
 </html>
