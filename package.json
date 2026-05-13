@@ -22,7 +22,7 @@
   "homepage": "https://github.com/rafaelbrandao1984/logistiki#readme",
   "devDependencies": {
     "@astrojs/tailwind": "^6.0.2",
-    "astro": "^6.3.1",
+    "astro": "^5.18.1",
     "tailwindcss": "^3.4.19"
   }
 }
