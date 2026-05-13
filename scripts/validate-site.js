@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 const root = path.resolve(__dirname, '..');
-const publicDir = path.join(root, 'public');
+const publicDir = path.join(root, 'dist');
 const siteHost = 'www.logistiki.com.br';
 const errors = [];
 const warnings = [];

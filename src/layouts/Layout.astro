@@ -1,0 +1,39 @@
+---
+import '../styles/global.css';
+
+export interface Props {
+	title: string;
+	description?: string;
+}
+
+const { title, description = "Contabilidade em Brasília especializada em Gestão Fiscal, Contabilidade Eleitoral, Terceiro Setor e BPO Financeiro. Atendimento estratégico para empresas e candidatos no DF." } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="pt-br" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{title}</title>
+    
+    <meta name="description" content={description}>
+    <meta property="og:title" content={title}>
+    <meta property="og:description" content={description}>
+    <meta property="og:url" content="https://www.logistiki.com.br/">
+    <meta property="og:image" content="https://www.logistiki.com.br/imagem-preview.jpg">
+    <meta property="og:type" content="website">
+    <link rel="canonical" href="https://www.logistiki.com.br/">
+    
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=logistiki-20260506">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=logistiki-20260506">
+    <link rel="preload" as="image" href="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1920&q=80">
+    <link rel="preload" as="image" href="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1920&q=80">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/brand.css">
+    <slot name="head" />
+</head>
+<body class="bg-slate-50 text-slate-900 overflow-x-hidden">
+    <slot />
+</body>
+</html>

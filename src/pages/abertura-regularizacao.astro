@@ -1,0 +1,43 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+import WhatsAppButton from '../components/WhatsAppButton.astro';
+---
+
+<Layout title="Abertura e Regularização de Empresas em Brasília | Logistiki" description="Abra sua empresa com agilidade e segurança em Brasília. Regularização de CNPJ, alterações contratuais e consultoria societária especializada.">
+    <Navbar />
+    <header class="hero-internal text-center px-6" style="--hero-photo: url('https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1920&q=80');">
+        <div class="max-w-4xl mx-auto">
+            <span class="text-gold uppercase tracking-[0.3em] text-sm font-bold mb-4 block animate-pulse">Legalização Societária</span>
+            <h1 class="text-4xl md:text-6xl text-white mb-6 leading-tight">Abertura e <span class="text-gold italic">Regularização</span></h1>
+            <p class="text-lg md:text-xl text-gray-200 mb-10 max-w-2xl mx-auto font-light leading-relaxed">
+                Tire sua ideia do papel com quem entende a dinâmica da Capital Federal. Agilidade técnica para o seu CNPJ nascer forte e regular.
+            </p>
+        </div>
+    </header>
+
+    <section class="py-24 bg-white">
+        <div class="container mx-auto px-6 lg:px-20 max-w-6xl">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div class="space-y-6 text-slate-600 text-lg leading-relaxed text-justify">
+                    <h2 class="text-4xl mb-8 leading-snug text-navy">O alicerce legal para o <br><span class="text-gold">sucesso do seu negócio.</span></h2>
+                    <p>Abrir uma empresa envolve escolhas cruciais: o tipo societário, a natureza jurídica e o enquadramento tributário inicial. Na Logistiki, transformamos esse processo burocrático em uma jornada fluida e segura.</p>
+                    <p>Além da abertura, atuamos na regularização de empresas que possuem pendências fiscais ou cadastrais. Analisamos cada detalhe para que seu negócio opere em total conformidade com a Junta Comercial (JUCIS-DF), Receita Federal e órgãos municipais.</p>
+                </div>
+                <div class="bg-navy p-10 rounded-xl border border-brand-gold-30 shadow-2xl text-white">
+                    <h3 class="text-gold font-bold uppercase text-sm mb-6 tracking-widest">Nossas Soluções:</h3>
+                    <ul class="space-y-4 text-sm text-slate-300">
+                        <li class="flex items-start"><span class="text-gold mr-3">▪</span><span>Constituição de empresas (ME, EPP, Médio e Grande Porte).</span></li>
+                        <li class="flex items-start"><span class="text-gold mr-3">▪</span><span>Alterações contratuais e Consolidação de Contrato Social.</span></li>
+                        <li class="flex items-start"><span class="text-gold mr-3">▪</span><span>Baixa e Encerramento de empresas com distrato social.</span></li>
+                        <li class="flex items-start"><span class="text-gold mr-3">▪</span><span>Parcelamento de débitos e reativação de CNPJ inapto.</span></li>
+                    </ul>
+                    <a href="https://wa.me/5561981901379" target="_blank" rel="noopener" class="mt-10 block text-center bg-gold text-navy py-4 rounded-full font-bold hover:bg-white transition-all">Abrir Minha Empresa</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <Footer />
+    <WhatsAppButton />
+</Layout>

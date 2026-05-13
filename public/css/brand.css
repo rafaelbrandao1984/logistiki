@@ -1,0 +1,281 @@
+/**
+ * Logistiki — identidade visual (navy profundo, sky #00adef, dourado metálico).
+ * Carregar depois do Tailwind CDN.
+ */
+
+:root {
+  /* Paleta principal — altere aqui para propagar no site */
+  --navy-deep: #00152e;
+  --navy: #06294a;
+  --navy-mid: #0a3d66;
+  --navy-footer: #041c34;
+  --sky: #00adef;
+  --sky-soft: rgba(0, 173, 239, 0.14);
+  --gold-light: #f7e08a;
+  --gold-mid: #d4af37;
+  --gold-dark: #9a7029;
+  --gold-solid: #d7ad45;
+  --white: #ffffff;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", system-ui, sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Playfair Display", Georgia, serif;
+}
+
+.text-gold {
+  color: var(--gold-solid);
+}
+
+.bg-navy {
+  background-color: var(--navy);
+}
+
+.border-gold {
+  border-color: var(--gold-solid);
+}
+
+.bg-gold {
+  background-color: var(--gold-solid);
+}
+
+.text-navy {
+  color: var(--navy);
+}
+
+/* --- Superfícies e bordas (substituem classes Tailwind com hex) --- */
+.bg-brand-nav {
+  background-color: color-mix(in srgb, var(--navy) 95%, transparent);
+}
+
+.bg-brand-footer {
+  background-color: var(--navy-footer);
+}
+
+.bg-brand-navy-soft {
+  background-color: color-mix(in srgb, var(--navy) 60%, transparent);
+}
+
+.border-brand-gold-10 {
+  border-color: color-mix(in srgb, var(--gold-solid) 10%, transparent);
+}
+
+.border-brand-gold-20 {
+  border-color: color-mix(in srgb, var(--gold-solid) 20%, transparent);
+}
+
+.border-brand-gold-30 {
+  border-color: color-mix(in srgb, var(--gold-solid) 30%, transparent);
+}
+
+.bg-brand-gold-40 {
+  background-color: color-mix(in srgb, var(--gold-solid) 40%, transparent);
+}
+
+.bg-brand-gold-10 {
+  background-color: color-mix(in srgb, var(--gold-solid) 10%, transparent);
+}
+
+.group:hover .group-hover\:bg-brand-gold-20 {
+  background-color: color-mix(in srgb, var(--gold-solid) 20%, transparent);
+}
+
+.decoration-brand-gold-60 {
+  text-decoration-color: color-mix(in srgb, var(--gold-solid) 60%, transparent);
+}
+
+.hover\:text-gold:hover {
+  color: var(--gold-solid);
+}
+
+.hover\:text-navy:hover {
+  color: var(--navy);
+}
+
+.hover\:bg-navy:hover {
+  background-color: var(--navy);
+}
+
+.hover\:border-brand-gold-solid:hover {
+  border-color: var(--gold-solid);
+}
+
+.hover\:shadow-brand-gold:hover {
+  box-shadow: 0 0 20px color-mix(in srgb, var(--gold-solid) 45%, transparent);
+}
+
+.group:hover .group-hover\:text-brand-gold {
+  color: var(--gold-solid);
+}
+
+.brand-wordmark {
+  display: inline-block;
+  background: linear-gradient(
+    165deg,
+    var(--gold-light) 0%,
+    var(--gold-mid) 38%,
+    var(--gold-dark) 72%,
+    #c9982e 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 0 0.55px rgba(255, 255, 255, 0.45))
+    drop-shadow(0 1px 2px rgba(0, 10, 30, 0.55));
+}
+
+.glow-sky {
+  background: radial-gradient(
+    circle at center,
+    rgba(0, 173, 239, 0.22) 0%,
+    rgba(0, 173, 239, 0.06) 45%,
+    transparent 70%
+  );
+}
+
+/* Textura sutil sobre fundos escuros */
+.hero-gradient::after,
+.servicos-bg::after,
+.hero-internal::after,
+.hero-partners::after,
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+  opacity: 0.045;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-size: 180px 180px;
+}
+
+.hero-gradient {
+  position: relative;
+  isolation: isolate;
+  background:
+    radial-gradient(ellipse 90% 55% at 85% 12%, var(--sky-soft), transparent 42%),
+    radial-gradient(ellipse 60% 40% at 10% 88%, rgba(0, 173, 239, 0.08), transparent 45%),
+    linear-gradient(135deg, rgba(0, 21, 46, 0.97) 0%, rgba(6, 41, 74, 0.92) 55%, rgba(2, 25, 52, 0.96) 100%),
+    url("../logistiki-identidade.png") no-repeat center center;
+  background-size: cover;
+}
+
+.hero-gradient > * {
+  position: relative;
+  z-index: 2;
+}
+
+.servicos-bg {
+  position: relative;
+  isolation: isolate;
+  background:
+    linear-gradient(135deg, rgba(0, 21, 46, 0.94) 0%, rgba(6, 41, 74, 0.9) 100%),
+    url("https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1920&q=80")
+      no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.servicos-bg > * {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-internal {
+  position: relative;
+  isolation: isolate;
+  /* Foto: defina --hero-photo no elemento, ex.: style="--hero-photo: url('https://…')" */
+  background:
+    radial-gradient(ellipse 70% 50% at 80% 15%, var(--sky-soft), transparent 50%),
+    linear-gradient(
+      135deg,
+      rgba(0, 21, 46, var(--hero-fade-strong, 0.88)) 0%,
+      rgba(6, 41, 74, var(--hero-fade-soft, 0.82)) 100%
+    ),
+    var(
+        --hero-photo,
+        url("https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1920&q=80")
+      )
+      no-repeat center center;
+  background-size: cover, cover, cover;
+  padding-top: 160px;
+  padding-bottom: 80px;
+}
+
+.hero-internal > * {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-partners {
+  position: relative;
+  isolation: isolate;
+  background:
+    radial-gradient(ellipse 85% 50% at 78% 18%, var(--sky-soft), transparent 38%),
+    linear-gradient(135deg, rgba(0, 21, 46, 0.98) 0%, rgba(8, 46, 76, 0.93) 100%),
+    url("../logistiki-identidade.png") no-repeat center center;
+  background-size: cover;
+  padding-top: 160px;
+  padding-bottom: 96px;
+}
+
+.hero-partners > * {
+  position: relative;
+  z-index: 2;
+}
+
+/* Landing contabilidade Brasília */
+.hero {
+  position: relative;
+  isolation: isolate;
+  background:
+    radial-gradient(ellipse 75% 55% at 70% 20%, var(--sky-soft), transparent 45%),
+    linear-gradient(135deg, rgba(0, 21, 46, 0.82) 0%, rgba(6, 41, 74, 0.88) 100%),
+    url("https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1920&q=80")
+      no-repeat center center;
+  background-size: cover;
+}
+
+.hero > * {
+  position: relative;
+  z-index: 2;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu {
+  display: none;
+}
+
+#mobile-menu {
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-10px);
+}
+
+#mobile-menu.active {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+/* Hover sky nos links que usam `transition` (exclui CTA com transition-all) */
+nav.site-nav a.transition:hover,
+nav.site-nav button.transition:hover {
+  color: var(--sky);
+}

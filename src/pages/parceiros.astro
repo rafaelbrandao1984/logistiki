@@ -1,0 +1,67 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+import WhatsAppButton from '../components/WhatsAppButton.astro';
+---
+
+<Layout title="Parceiros e Soluções Complementares | Logistiki" description="Parceiros Logistiki para ERP, PDV, certificado digital e suporte operacional em Brasília.">
+    <Navbar />
+    <header class="hero-partners px-6 text-center">
+        <div class="max-w-5xl mx-auto">
+            <span class="text-gold uppercase tracking-[0.3em] text-sm font-bold mb-4 block">Ecossistema Logistiki</span>
+            <h1 class="text-4xl md:text-6xl text-white mb-6 leading-tight">Parceiros de <span class="text-gold italic">soluções complementares</span></h1>
+            <p class="text-lg md:text-xl text-gray-200 max-w-3xl mx-auto font-light leading-relaxed">
+                Soluções de apoio para empresas que precisam conectar gestão contábil, operação comercial, documentação digital e processos administrativos.
+            </p>
+        </div>
+    </header>
+
+    <main>
+        <section class="py-24 bg-white">
+            <div class="container mx-auto px-6 lg:px-20">
+                <div class="grid lg:grid-cols-[0.9fr_1.1fr] gap-12 items-center">
+                    <div class="bg-navy rounded-2xl border border-brand-gold-30 p-8 text-white shadow-2xl">
+                        <p class="text-xs uppercase tracking-[0.35em] text-gold font-bold mb-4">Parceiro</p>
+                        <h2 class="text-5xl mb-4">D&B</h2>
+                        <p class="text-slate-300 leading-relaxed">
+                            Apoio em automação comercial e rotinas operacionais para negócios que precisam integrar vendas, estoque, financeiro e documentação digital.
+                        </p>
+                        <div class="mt-8 grid grid-cols-2 gap-3 text-sm">
+                            <a href="sistema-erp.html" class="border border-white/10 rounded-lg p-4 hover:border-brand-gold-solid hover:text-gold transition">ERP</a>
+                            <a href="kit-pdv.html" class="border border-white/10 rounded-lg p-4 hover:border-brand-gold-solid hover:text-gold transition">KIT PDV</a>
+                            <a href="certificado-digital.html" class="border border-white/10 rounded-lg p-4 hover:border-brand-gold-solid hover:text-gold transition">Certificado Digital</a>
+                            <a href="apoio-administrativo.html" class="border border-white/10 rounded-lg p-4 hover:border-brand-gold-solid hover:text-gold transition">Suporte Operacional</a>
+                        </div>
+                    </div>
+
+                    <div class="space-y-8">
+                        <div>
+                            <h2 class="text-4xl text-navy mb-4">Soluções integradas para a rotina da sua empresa.</h2>
+                            <p class="text-slate-600 text-lg leading-relaxed text-justify">
+                                Com o apoio de parceiros especializados, a Logistiki amplia o suporte ao cliente em áreas como ERP, PDV, certificado digital e organização operacional, mantendo a contabilidade alinhada aos dados do dia a dia.
+                            </p>
+                        </div>
+                        <div class="grid md:grid-cols-3 gap-4">
+                            <div class="bg-slate-50 border border-slate-100 rounded-lg p-6">
+                                <h3 class="text-navy text-lg mb-3">ERP</h3>
+                                <p class="text-sm text-slate-600 leading-relaxed">Implantação e organização de processos para vendas, estoque e financeiro.</p>
+                            </div>
+                            <div class="bg-slate-50 border border-slate-100 rounded-lg p-6">
+                                <h3 class="text-navy text-lg mb-3">PDV</h3>
+                                <p class="text-sm text-slate-600 leading-relaxed">Frente de caixa e rotina comercial integrada ao fechamento contábil.</p>
+                            </div>
+                            <div class="bg-slate-50 border border-slate-100 rounded-lg p-6">
+                                <h3 class="text-navy text-lg mb-3">Digital</h3>
+                                <p class="text-sm text-slate-600 leading-relaxed">Certificado digital e suporte para documentos eletrônicos essenciais.</p>
+                            </div>
+                        </div>
+                        <a href="https://wa.me/5561981901379" target="_blank" rel="noopener" class="inline-block bg-gold text-navy px-8 py-4 rounded-full font-bold hover:bg-navy hover:text-white transition-all">Falar com a Logistiki</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <Footer />
+    <WhatsAppButton />
+</Layout>

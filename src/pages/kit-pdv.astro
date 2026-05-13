@@ -1,0 +1,43 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+import WhatsAppButton from '../components/WhatsAppButton.astro';
+---
+
+<Layout title="KIT PDV e Frente de Caixa | Logistiki Brasília" description="Soluções completas de KIT PDV para o seu comércio em Brasília. Agilidade no atendimento e integração total com o estoque e financeiro por parceiros técnicos.">
+    <Navbar />
+    <header class="hero-internal text-center px-6" style="--hero-photo: url('https://images.unsplash.com/photo-1556742044-3c52d6e88c02?auto=format&fit=crop&w=1920&q=80');">
+        <div class="max-w-4xl mx-auto">
+            <span class="text-gold uppercase tracking-[0.3em] text-sm font-bold mb-4 block animate-pulse">Automação Comercial Completa</span>
+            <h1 class="text-4xl md:text-6xl text-white mb-6 leading-tight">KIT <span class="text-gold italic">PDV</span></h1>
+            <p class="text-lg md:text-xl text-gray-200 mb-10 max-w-2xl mx-auto font-light leading-relaxed">
+                A solução definitiva para o seu balcão. Transforme seu atendimento com agilidade técnica, hardware de ponta e integração tributária imediata.
+            </p>
+        </div>
+    </header>
+
+    <section class="py-24 bg-white">
+        <div class="container mx-auto px-6 lg:px-20 max-w-6xl">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div class="space-y-6 text-slate-600 text-lg leading-relaxed text-justify">
+                    <h2 class="text-4xl mb-8 leading-snug text-navy">Velocidade no checkout, <br><span class="text-gold">precisão no estoque.</span></h2>
+                    <p>O KIT PDV (Ponto de Venda), viabilizado por parceiros técnicos, é projetado para eliminar filas e erros de faturamento. Oferecemos um conjunto integrado de hardware e software que se adapta às necessidades do pequeno e médio varejista em Brasília.</p>
+                    <p>Com a nossa implementação, cada venda realizada no seu balcão alimenta automaticamente o seu controle de estoque e gera os dados fiscais necessários para o seu fechamento contábil na Logistiki, garantindo uma gestão sem furos.</p>
+                </div>
+                <div class="bg-navy p-10 rounded-xl border border-brand-gold-30 shadow-2xl text-white">
+                    <h3 class="text-gold font-bold uppercase text-sm mb-6 tracking-widest">O que compõe o KIT:</h3>
+                    <ul class="space-y-4 text-sm text-slate-300">
+                        <li class="flex items-start"><span class="text-gold mr-3">▪</span><span>Software de Frente de Caixa ágil e intuitivo.</span></li>
+                        <li class="flex items-start"><span class="text-gold mr-3">▪</span><span>Impressora Térmica de cupons fiscais.</span></li>
+                        <li class="flex items-start"><span class="text-gold mr-3">▪</span><span>Leitor de código de barras de alta precisão.</span></li>
+                        <li class="flex items-start"><span class="text-gold mr-3">▪</span><span>Integração total com meios de pagamento (TEF).</span></li>
+                    </ul>
+                    <a href="https://wa.me/5561981901379" target="_blank" rel="noopener" class="mt-10 block text-center bg-gold text-navy py-4 rounded-full font-bold hover:bg-white transition-all">Montar Meu PDV</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <Footer />
+    <WhatsAppButton />
+</Layout>

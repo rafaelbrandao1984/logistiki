@@ -1,0 +1,43 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+import WhatsAppButton from '../components/WhatsAppButton.astro';
+---
+
+<Layout title="Apoio Administrativo em Brasília | Logistiki" description="Terceirização de apoio administrativo estratégico em Brasília. Organize seus processos e foque no crescimento do seu negócio com a Logistiki.">
+    <Navbar />
+    <header class="hero-internal text-center px-6" style="--hero-photo: url('https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=1920&q=80');">
+        <div class="max-w-4xl mx-auto">
+            <span class="text-gold uppercase tracking-[0.3em] text-sm font-bold mb-4 block animate-pulse">Excelência Operacional</span>
+            <h1 class="text-4xl md:text-6xl text-white mb-6 leading-tight">Apoio <span class="text-gold italic">Administrativo</span></h1>
+            <p class="text-lg md:text-xl text-gray-200 mb-10 max-w-2xl mx-auto font-light leading-relaxed">
+                Liberte-se da burocracia operacional. Oferecemos o suporte necessário para que sua estrutura funcione com precisão e agilidade em Brasília.
+            </p>
+        </div>
+    </header>
+
+    <section class="py-24 bg-white">
+        <div class="container mx-auto px-6 lg:px-20 max-w-6xl">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div class="space-y-6 text-slate-600 text-lg leading-relaxed text-justify">
+                    <h2 class="text-4xl mb-8 leading-snug text-navy">A estrutura que <br><span class="text-gold">sua empresa merece.</span></h2>
+                    <p>Muitas vezes, o crescimento de um negócio é travado pelo excesso de demandas administrativas do dia a dia. Na Logistiki, assumimos a retaguarda dos seus processos para que sua liderança possa focar no que realmente importa: a estratégia.</p>
+                    <p>Nosso apoio administrativo é personalizado para atender desde pequenas empresas até grandes operações, garantindo que cada fluxo de trabalho seja executado com o rigor e a organização que o mercado de Brasília exige.</p>
+                </div>
+                <div class="bg-navy p-10 rounded-xl border border-brand-gold-30 shadow-2xl text-white">
+                    <h3 class="text-gold font-bold uppercase text-sm mb-6 tracking-widest">Serviços de Suporte:</h3>
+                    <ul class="space-y-4 text-sm text-slate-300">
+                        <li class="flex items-start"><span class="text-gold mr-3">▪</span><span>Organização de documentos e gestão de arquivos digitais.</span></li>
+                        <li class="flex items-start"><span class="text-gold mr-3">▪</span><span>Suporte em rotinas de faturamento e contas a pagar/receber.</span></li>
+                        <li class="flex items-start"><span class="text-gold mr-3">▪</span><span>Auxílio na gestão de contratos e renovações de licenças.</span></li>
+                        <li class="flex items-start"><span class="text-gold mr-3">▪</span><span>Elaboração de relatórios gerenciais e acompanhamento de prazos.</span></li>
+                    </ul>
+                    <a href="https://wa.me/5561981901379" target="_blank" rel="noopener" class="mt-10 block text-center bg-gold text-navy py-4 rounded-full font-bold hover:bg-white transition-all">Saber Mais</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <Footer />
+    <WhatsAppButton />
+</Layout>

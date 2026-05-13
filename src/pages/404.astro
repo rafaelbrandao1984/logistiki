@@ -1,0 +1,24 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+import WhatsAppButton from '../components/WhatsAppButton.astro';
+---
+
+<Layout title="Página não encontrada | Logistiki" description="A página solicitada não foi encontrada. Acesse a Logistiki para falar com especialistas em contabilidade e gestão fiscal em Brasília.">
+    <Navbar />
+    <main>
+        <div class="brand" aria-label="Logistiki">
+            <span>Logistiki</span>
+        </div>
+        <div class="code">Erro 404</div>
+        <h1>Página não encontrada</h1>
+        <p>O endereço pode ter mudado ou sido digitado incorretamente. Você pode voltar para a página inicial ou falar com nossa equipe pelo WhatsApp.</p>
+        <div class="actions">
+            <a class="primary" href="/">Voltar para o início</a>
+            <a class="secondary" href="https://wa.me/5561981901379?text=Ol%C3%A1%2C%20encontrei%20uma%20p%C3%A1gina%20404%20no%20site%20e%20preciso%20de%20atendimento." target="_blank" rel="noopener">Falar no WhatsApp</a>
+        </div>
+    </main>
+    <Footer />
+    <WhatsAppButton />
+</Layout>
