@@ -5,22 +5,22 @@ import Footer from '../components/Footer.astro';
 import WhatsAppButton from '../components/WhatsAppButton.astro';
 ---
 
-<Layout title="Logistiki | Gestão Contábil Estratégica em Brasília" description="Contabilidade em Brasília especializada em Gestão Fiscal, Contabilidade Eleitoral, Terceiro Setor e BPO Financeiro. Atendimento estratégico para empresas e candidatos no DF.">
+<Layout title="Logistiki | Gestão Contábil Estratégica em Brasília" description="Contabilidade em Brasília especializada em Gestão Fiscal, Contabilidade Eleitoral, Terceiro Setor e BPO Financeiro. Atendimento estratégico para empresas e candidatos no DF." canonicalUrl="https://www.logistiki.com.br/">
     <Navbar />
     <section class="min-h-screen flex items-center hero-gradient px-6 pt-24 pb-16">
         <div class="container mx-auto grid lg:grid-cols-[1.05fr_0.95fr] gap-12 items-center">
             <div class="max-w-3xl text-center lg:text-left">
-                <span class="text-gold uppercase tracking-[0.3em] text-sm font-bold mb-4 block">Excelência na Capital Federal</span>
-                <h1 class="text-4xl md:text-6xl lg:text-7xl text-white mb-6 leading-tight drop-shadow-lg">
+                <span class="text-navy uppercase tracking-[0.3em] text-sm font-bold mb-4 block">Excelência na Capital Federal</span>
+                <h1 class="text-4xl md:text-6xl lg:text-7xl text-navy mb-6 leading-tight">
                     Logistiki<br>
                     <span class="text-gold italic">inteligência contábil com visão estratégica</span>
                 </h1>
-                <p class="text-lg md:text-xl text-gray-200 mb-10 max-w-2xl mx-auto lg:mx-0 font-light leading-relaxed">
+                <p class="text-lg md:text-xl text-slate-600 mb-10 max-w-2xl mx-auto lg:mx-0 font-light leading-relaxed">
                     Contabilidade empresarial, eleitoral, fiscal e financeira para quem precisa de clareza técnica, segurança jurídica e decisões melhores em Brasília.
                 </p>
                 <div class="flex flex-col md:flex-row justify-center lg:justify-start gap-6">
-                <a href="#servicos" class="bg-gold text-navy px-10 py-4 rounded-full font-bold hover:shadow-brand-gold transform hover:-translate-y-1 transition-all">Nossos Serviços</a>
-                <a href="parceiros.html" class="border border-white/30 text-white px-10 py-4 rounded-full font-bold hover:bg-white hover:text-navy transform hover:-translate-y-1 transition-all">Parceiros e Soluções Complementares</a>
+                <a href="#servicos" class="bg-sky text-white px-10 py-4 rounded-full font-bold hover:shadow-lg hover:bg-navy transform hover:-translate-y-1 transition-all">Nossos Serviços</a>
+                <a href="parceiros.html" class="border-2 border-navy text-navy px-10 py-4 rounded-full font-bold hover:bg-navy hover:text-white transform hover:-translate-y-1 transition-all">Parceiros e Soluções Complementares</a>
                 </div>
             </div>
             <div class="relative hidden lg:block">
@@ -43,11 +43,13 @@ import WhatsAppButton from '../components/WhatsAppButton.astro';
                     </p>
                 </div>
                 <div class="relative group order-1 md:order-2">
-                    <div class="absolute -inset-4 bg-brand-gold-10 rounded-xl group-hover:bg-brand-gold-20 transition-all duration-700"></div>
-                    <div class="relative bg-navy p-10 md:p-14 rounded-xl border border-brand-gold-30 shadow-2xl text-center transform group-hover:scale-[1.02] transition-all duration-500">
-                        <p class="text-white text-xl md:text-2xl italic font-light leading-relaxed">
+                    <div class="absolute -inset-4 rounded-xl" style="background: rgba(41,171,226,0.08);"></div>
+                    <div class="relative bg-white p-10 md:p-14 rounded-xl border-l-4 shadow-xl text-center transform group-hover:scale-[1.02] transition-all duration-500" style="border-color: var(--sky);">
+                        <div class="w-12 h-1 mx-auto mb-6" style="background: var(--sky);"></div>
+                        <p class="text-navy text-xl md:text-2xl italic font-light leading-relaxed">
                             "Transformamos números, obrigações e rotinas em uma operação mais clara, segura e previsível."
                         </p>
+                        <div class="w-12 h-1 mx-auto mt-6" style="background: var(--gold-solid);"></div>
                     </div>
                 </div>
             </div>
@@ -61,75 +63,75 @@ import WhatsAppButton from '../components/WhatsAppButton.astro';
                 <div class="w-24 h-1 bg-gold mx-auto mt-4"></div>
             </div>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div class="group p-8 bg-white border border-slate-100 rounded-xl text-center hover:bg-navy transition-all duration-500 shadow-sm hover:shadow-xl">
+                <div class="especialidade-card group p-8 rounded-xl text-center transition-all duration-400 shadow-sm hover:shadow-xl">
                     <div class="text-4xl mb-4 transform group-hover:scale-110 transition-transform">🏢</div>
-                    <h3 class="text-navy font-bold text-sm uppercase group-hover:text-brand-gold">Gestão Fiscal</h3>
-                    <p class="text-xs text-slate-500 mt-2 group-hover:text-white">Constituição e consultoria para a Reforma Tributária.</p>
+                    <h3 class="text-white font-bold text-sm uppercase">Gestão Fiscal</h3>
+                    <p class="text-xs text-white/80 mt-2">Constituição e consultoria para a Reforma Tributária.</p>
                 </div>
-                <div class="group p-8 bg-white border border-slate-100 rounded-xl text-center hover:bg-navy transition-all duration-500 shadow-sm hover:shadow-xl">
+                <div class="especialidade-card group p-8 rounded-xl text-center transition-all duration-400 shadow-sm hover:shadow-xl">
                     <div class="text-4xl mb-4 transform group-hover:scale-110 transition-transform">⚙️</div>
-                    <h3 class="text-navy font-bold text-sm uppercase group-hover:text-brand-gold">Parceiros</h3>
-                    <p class="text-xs text-slate-500 mt-2 group-hover:text-white">ERP, PDV e Certificado Digital.</p>
+                    <h3 class="text-white font-bold text-sm uppercase">Parceiros</h3>
+                    <p class="text-xs text-white/80 mt-2">ERP, PDV e Certificado Digital.</p>
                 </div>
-                <div class="group p-8 bg-white border border-slate-100 rounded-xl text-center hover:bg-navy transition-all duration-500 shadow-sm hover:shadow-xl">
+                <div class="especialidade-card group p-8 rounded-xl text-center transition-all duration-400 shadow-sm hover:shadow-xl">
                     <div class="text-4xl mb-4 transform group-hover:scale-110 transition-transform">⚖️</div>
-                    <h3 class="text-navy font-bold text-sm uppercase group-hover:text-brand-gold">Eleitoral & 3º Setor</h3>
-                    <p class="text-xs text-slate-500 mt-2 group-hover:text-white">SPCA e contabilidade especializada para ONGs e partidos.</p>
+                    <h3 class="text-white font-bold text-sm uppercase">Eleitoral & 3º Setor</h3>
+                    <p class="text-xs text-white/80 mt-2">SPCA e contabilidade especializada para ONGs e partidos.</p>
                 </div>
-                <div class="group p-8 bg-white border border-slate-100 rounded-xl text-center hover:bg-navy transition-all duration-500 shadow-sm hover:shadow-xl">
+                <div class="especialidade-card group p-8 rounded-xl text-center transition-all duration-400 shadow-sm hover:shadow-xl">
                     <div class="text-4xl mb-4 transform group-hover:scale-110 transition-transform">📈</div>
-                    <h3 class="text-navy font-bold text-sm uppercase group-hover:text-brand-gold">BPO Financeiro</h3>
-                    <p class="text-xs text-slate-500 mt-2 group-hover:text-white">Gestão financeira completa e fluxo de caixa.</p>
+                    <h3 class="text-white font-bold text-sm uppercase">BPO Financeiro</h3>
+                    <p class="text-xs text-white/80 mt-2">Gestão financeira completa e fluxo de caixa.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="servicos" class="py-24 servicos-bg text-white">
+    <section id="servicos" class="py-24 text-white" style="background: var(--sky);">
         <div class="container mx-auto px-6">
             <div class="text-center mb-20">
-                <h2 class="text-4xl mb-4 italic text-gold">Serviços Prestados</h2>
-                <div class="w-24 h-1 bg-gold mx-auto"></div>
+                <h2 class="text-4xl mb-4 italic text-white">Serviços Prestados</h2>
+                <div class="w-24 h-1 bg-white/40 mx-auto"></div>
             </div>
             
             <div class="grid md:grid-cols-2 gap-12 text-justify">
                 <div class="space-y-12">
-                    <div class="border-l-4 border-gold pl-6 bg-brand-navy-soft p-8 rounded-r-xl backdrop-blur-md">
-                        <h3 class="text-gold text-xl font-bold uppercase mb-4">1. Contabilidade Consultiva e Gestão Fiscal</h3>
-                        <ul class="space-y-4 text-sm text-slate-200">
-                            <li class="flex items-start"><span class="text-gold mr-2">▪</span><span><strong>Constituição e Regularização:</strong> Abertura, alteração e baixa de empresas.</span></li>
-                            <li class="flex items-start"><span class="text-gold mr-2">▪</span><span><strong>Gestão Fiscal:</strong> Apuração de impostos e consultoria para a Reforma Tributária.</span></li>
-                            <li class="flex items-start"><span class="text-gold mr-2">▪</span><span><strong>Folha de Pagamento (DP):</strong> Gestão completa de RH e obrigações do eSocial.</span></li>
-                            <li class="flex items-start"><span class="text-gold mr-2">▪</span><span><strong>Pessoa Física:</strong> Declaração de IRPF e análise de variação patrimonial.</span></li>
+                    <div class="border-l-4 pl-6 p-8 rounded-r-xl" style="border-color: var(--gold-solid); background: rgba(255,255,255,0.15); backdrop-filter: blur(8px);">
+                        <h3 class="text-white text-xl font-bold uppercase mb-4">1. Contabilidade Consultiva e Gestão Fiscal</h3>
+                        <ul class="space-y-4 text-sm text-white/85">
+                            <li class="flex items-start"><span class="text-white/60 mr-2">▪</span><span><strong>Constituição e Regularização:</strong> Abertura, alteração e baixa de empresas.</span></li>
+                            <li class="flex items-start"><span class="text-white/60 mr-2">▪</span><span><strong>Gestão Fiscal:</strong> Apuração de impostos e consultoria para a Reforma Tributária.</span></li>
+                            <li class="flex items-start"><span class="text-white/60 mr-2">▪</span><span><strong>Folha de Pagamento (DP):</strong> Gestão completa de RH e obrigações do eSocial.</span></li>
+                            <li class="flex items-start"><span class="text-white/60 mr-2">▪</span><span><strong>Pessoa Física:</strong> Declaração de IRPF e análise de variação patrimonial.</span></li>
                         </ul>
                     </div>
 
-                    <div class="border-l-4 border-gold pl-6 bg-brand-navy-soft p-8 rounded-r-xl backdrop-blur-md">
-                        <h3 class="text-gold text-xl font-bold uppercase mb-4">2. Parceiros e Soluções Complementares</h3>
-                        <ul class="space-y-4 text-sm text-slate-200">
-                            <li class="flex items-start"><span class="text-gold mr-2">▪</span><span><strong>Automação Comercial:</strong> ERP, PDV e fluxos operacionais por parceiros técnicos.</span></li>
-                            <li class="flex items-start"><span class="text-gold mr-2">▪</span><span><strong>Certificado Digital:</strong> Apoio para emissão de e-CPF e e-CNPJ.</span></li>
-                            <li class="flex items-start"><span class="text-gold mr-2">▪</span><span><strong>Suporte Operacional:</strong> Integrações que conectam rotina, financeiro e fechamento contábil.</span></li>
-                            <li class="flex items-start"><span class="text-gold mr-2">▪</span><span><a href="parceiros.html" class="font-bold text-white underline decoration-brand-gold-60 underline-offset-4 hover:text-gold">Ver parceiros</a></span></li>
+                    <div class="border-l-4 pl-6 p-8 rounded-r-xl" style="border-color: var(--gold-solid); background: rgba(255,255,255,0.15); backdrop-filter: blur(8px);">
+                        <h3 class="text-white text-xl font-bold uppercase mb-4">2. Parceiros e Soluções Complementares</h3>
+                        <ul class="space-y-4 text-sm text-white/85">
+                            <li class="flex items-start"><span class="text-white/60 mr-2">▪</span><span><strong>Automação Comercial:</strong> ERP, PDV e fluxos operacionais por parceiros técnicos.</span></li>
+                            <li class="flex items-start"><span class="text-white/60 mr-2">▪</span><span><strong>Certificado Digital:</strong> Apoio para emissão de e-CPF e e-CNPJ.</span></li>
+                            <li class="flex items-start"><span class="text-white/60 mr-2">▪</span><span><strong>Suporte Operacional:</strong> Integrações que conectam rotina, financeiro e fechamento contábil.</span></li>
+                            <li class="flex items-start"><span class="text-white/60 mr-2">▪</span><span><a href="parceiros.html" class="font-bold text-white underline underline-offset-4 hover:text-gold transition-colors">Ver parceiros</a></span></li>
                         </ul>
                     </div>
                 </div>
 
                 <div class="space-y-12">
-                    <div class="border-l-4 border-gold pl-6 bg-brand-navy-soft p-8 rounded-r-xl backdrop-blur-md">
-                        <h3 class="text-gold text-xl font-bold uppercase mb-4">3. Especialidades: Terceiro Setor e Eleitoral</h3>
-                        <ul class="space-y-4 text-sm text-slate-200">
-                            <li class="flex items-start"><span class="text-gold mr-2">▪</span><span><strong>Terceiro Setor:</strong> Foco em imunidades e isenções para ONGs e fundações.</span></li>
-                            <li class="flex items-start"><span class="text-gold mr-2">▪</span><span><strong>Contabilidade Eleitoral (SPCA):</strong> Prestação de contas rigorosa (TSE/TRE).</span></li>
+                    <div class="border-l-4 pl-6 p-8 rounded-r-xl" style="border-color: var(--gold-solid); background: rgba(255,255,255,0.15); backdrop-filter: blur(8px);">
+                        <h3 class="text-white text-xl font-bold uppercase mb-4">3. Especialidades: Terceiro Setor e Eleitoral</h3>
+                        <ul class="space-y-4 text-sm text-white/85">
+                            <li class="flex items-start"><span class="text-white/60 mr-2">▪</span><span><strong>Terceiro Setor:</strong> Foco em imunidades e isenções para ONGs e fundações.</span></li>
+                            <li class="flex items-start"><span class="text-white/60 mr-2">▪</span><span><strong>Contabilidade Eleitoral (SPCA):</strong> Prestação de contas rigorosa (TSE/TRE).</span></li>
                         </ul>
                     </div>
 
-                    <div class="border-l-4 border-gold pl-6 bg-brand-navy-soft p-8 rounded-r-xl backdrop-blur-md">
-                        <h3 class="text-gold text-xl font-bold uppercase mb-4">4. BPO Financeiro 📊</h3>
-                        <ul class="space-y-4 text-sm text-slate-200">
-                            <li class="flex items-start"><span class="text-gold mr-2">▪</span><span><strong>Contas a Pagar e Receber:</strong> Gestão de pagamentos e controle de recebimentos.</span></li>
-                            <li class="flex items-start"><span class="text-gold mr-2">▪</span><span><strong>Fluxo de Caixa:</strong> Gráficos de monitoramento e projeção financeira para tomada de decisão.</span></li>
-                            <li class="flex items-start"><span class="text-gold mr-2">▪</span><span><strong>Conciliação Bancária:</strong> Conferência diária de saldos e emissão de notas/boletos.</span></li>
+                    <div class="border-l-4 pl-6 p-8 rounded-r-xl" style="border-color: var(--gold-solid); background: rgba(255,255,255,0.15); backdrop-filter: blur(8px);">
+                        <h3 class="text-white text-xl font-bold uppercase mb-4">4. BPO Financeiro 📊</h3>
+                        <ul class="space-y-4 text-sm text-white/85">
+                            <li class="flex items-start"><span class="text-white/60 mr-2">▪</span><span><strong>Contas a Pagar e Receber:</strong> Gestão de pagamentos e controle de recebimentos.</span></li>
+                            <li class="flex items-start"><span class="text-white/60 mr-2">▪</span><span><strong>Fluxo de Caixa:</strong> Gráficos de monitoramento e projeção financeira para tomada de decisão.</span></li>
+                            <li class="flex items-start"><span class="text-white/60 mr-2">▪</span><span><strong>Conciliação Bancária:</strong> Conferência diária de saldos e emissão de notas/boletos.</span></li>
                         </ul>
                     </div>
                 </div>
@@ -194,14 +196,167 @@ import WhatsAppButton from '../components/WhatsAppButton.astro';
                         <p class="text-gray-600 text-sm leading-relaxed">Sim. Encaminhamos a configuração, treinamento e automação para parceiros técnicos, preservando a consistência dos dados usados na contabilidade.</p>
                     </div>                    
 
-                    <div class="p-10 bg-navy rounded-lg border border-brand-gold-30 text-center shadow-xl">
-                        <p class="text-gold font-bold mb-6">Ainda tem dúvidas?</p>
-                        <a href="https://wa.me/5561981901379" target="_blank" rel="noopener" class="inline-block bg-gold text-navy px-8 py-3 rounded-full font-bold hover:bg-white transition-all shadow-lg">Falar no WhatsApp</a>
+                    <div class="p-10 rounded-lg text-center shadow-xl" style="background: var(--sky);">
+                        <p class="text-white font-bold mb-2 text-lg">Ainda tem dúvidas?</p>
+                        <p class="text-white/80 text-sm mb-6">Nossa equipe está pronta para te atender.</p>
+                        <a href="https://wa.me/5561981901379" target="_blank" rel="noopener" class="inline-block bg-white px-8 py-3 rounded-full font-bold transition-all shadow-lg hover:shadow-xl hover:scale-105" style="color: var(--navy);">Falar no WhatsApp</a>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="py-24 text-white" style="background: var(--sky);">
+        <div class="container mx-auto px-6 max-w-6xl">
+            <div class="grid lg:grid-cols-2 gap-16 items-start">
+
+                <div class="space-y-8">
+                    <div>
+                        <span class="text-white/70 uppercase tracking-[0.3em] text-xs font-bold mb-3 block">Diagnóstico Inicial Gratuito</span>
+                        <h2 class="text-4xl md:text-5xl text-white leading-tight mb-4">Pronto para organizar sua empresa?</h2>
+                        <p class="text-white/85 text-lg leading-relaxed">
+                            Preencha o formulário e nossa equipe retorna com uma proposta personalizada no mesmo dia útil.
+                        </p>
+                    </div>
+
+                    <ul class="space-y-4 text-white/90 text-sm">
+                        <li class="flex items-center gap-3">
+                            <span class="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center text-xs font-bold flex-shrink-0">✓</span>
+                            Diagnóstico inicial gratuito do seu cenário tributário
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center text-xs font-bold flex-shrink-0">✓</span>
+                            Atendimento rápido por WhatsApp no mesmo dia útil
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center text-xs font-bold flex-shrink-0">✓</span>
+                            Especialistas em Brasília: fiscal, eleitoral e BPO financeiro
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span class="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center text-xs font-bold flex-shrink-0">✓</span>
+                            Suporte completo: abertura, regularização e certificação digital
+                        </li>
+                    </ul>
+
+                    <div class="pt-6 border-t border-white/20">
+                        <p class="text-white/70 text-sm mb-4">Prefere falar direto?</p>
+                        <a href="https://wa.me/5561981901379" target="_blank" rel="noopener"
+                           class="inline-flex items-center gap-3 bg-white/10 border border-white/30 px-6 py-3 rounded-full font-bold hover:bg-white/20 transition-all text-sm">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.554 4.122 1.528 5.855L0 24l6.335-1.508A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.006-1.374l-.36-.213-3.727.977.993-3.63-.235-.374A9.818 9.818 0 1112 21.818z"/></svg>
+                            (61) 98190-1379 · WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl p-8 shadow-2xl">
+                    <h3 class="text-navy font-bold text-lg mb-6">Solicite seu diagnóstico inicial</h3>
+                    <form id="lead-form-home" class="space-y-4" data-track-form="lead-form-home">
+                        <input type="hidden" name="origem" value="homepage">
+                        <input type="hidden" name="pagina" value="index">
+                        <div>
+                            <label for="h-nome" class="block text-sm font-medium mb-2" style="color: var(--navy);">Nome</label>
+                            <input id="h-nome" name="nome" required
+                                   class="w-full rounded-lg px-4 py-3 border text-slate-900 focus:outline-none focus:ring-2 transition-all"
+                                   style="border-color: rgba(41,171,226,0.3); focus-ring-color: var(--sky);"
+                                   type="text" placeholder="Seu nome completo">
+                        </div>
+                        <div>
+                            <label for="h-telefone" class="block text-sm font-medium mb-2" style="color: var(--navy);">Telefone / WhatsApp</label>
+                            <input id="h-telefone" name="telefone" required
+                                   class="w-full rounded-lg px-4 py-3 border text-slate-900 focus:outline-none focus:ring-2 transition-all"
+                                   style="border-color: rgba(41,171,226,0.3);"
+                                   type="tel" placeholder="(61) 99999-9999">
+                        </div>
+                        <div>
+                            <label for="h-servico" class="block text-sm font-medium mb-2" style="color: var(--navy);">Serviço de interesse</label>
+                            <select id="h-servico" name="servico"
+                                    class="w-full rounded-lg px-4 py-3 border text-slate-700 focus:outline-none transition-all"
+                                    style="border-color: rgba(41,171,226,0.3);">
+                                <option value="">Selecione...</option>
+                                <option>Contabilidade Consultiva</option>
+                                <option>Gestão Fiscal e Tributária</option>
+                                <option>BPO Financeiro</option>
+                                <option>Folha de Pagamento (DP)</option>
+                                <option>Contabilidade Eleitoral (SPCA)</option>
+                                <option>Terceiro Setor / ONG</option>
+                                <option>Abertura de Empresa</option>
+                                <option>Outro</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="h-mensagem" class="block text-sm font-medium mb-2" style="color: var(--navy);">Resumo da necessidade <span class="text-slate-400 font-normal">(opcional)</span></label>
+                            <textarea id="h-mensagem" name="mensagem" rows="3"
+                                      class="w-full rounded-lg px-4 py-3 border text-slate-900 focus:outline-none transition-all resize-none"
+                                      style="border-color: rgba(41,171,226,0.3);"
+                                      placeholder="Ex.: preciso regularizar impostos e organizar meu financeiro."></textarea>
+                        </div>
+                        <p id="lead-form-feedback" class="text-xs text-slate-400 hidden" role="status" aria-live="polite"></p>
+                        <p class="text-xs text-slate-400">Ao enviar, você concorda em ser contatado para proposta comercial.</p>
+                        <button id="lead-submit-home" type="submit"
+                                class="w-full py-4 rounded-xl font-bold text-white transition-all hover:opacity-90 hover:shadow-lg"
+                                style="background: var(--sky);"
+                                data-track-event="submit_lead_form_home">
+                            Enviar e receber diagnóstico →
+                        </button>
+                    </form>
+                </div>
+
             </div>
         </div>
     </section>
     <Footer />
     <WhatsAppButton />
 </Layout>
+
+<script>
+    const leadForm = document.getElementById('lead-form-home');
+    const leadFeedback = document.getElementById('lead-form-feedback');
+    const leadSubmit = document.getElementById('lead-submit-home');
+    const leadSubmitDefaultLabel = leadSubmit?.textContent?.trim() ?? 'Enviar e receber diagnóstico →';
+
+    leadForm?.addEventListener('submit', (event) => {
+        event.preventDefault();
+
+        if (!(leadForm instanceof HTMLFormElement) || !leadForm.reportValidity()) {
+            return;
+        }
+
+        const data = new FormData(leadForm);
+        const nome = data.get('nome')?.toString().trim() ?? '';
+        const telefone = data.get('telefone')?.toString().trim() ?? '';
+        const servico = data.get('servico')?.toString().trim() || 'Não informado';
+        const mensagem = data.get('mensagem')?.toString().trim() ?? '';
+
+        const whatsappMessage = [
+            'Olá! Gostaria de solicitar um diagnóstico inicial.',
+            '',
+            `Nome: ${nome}`,
+            `Telefone: ${telefone}`,
+            `Serviço: ${servico}`,
+            mensagem ? `Mensagem: ${mensagem}` : '',
+        ].filter(Boolean).join('\n');
+
+        if (typeof gtag === 'function') {
+            gtag('event', 'submit_lead_form_home', { form_id: 'lead-form-home' });
+        }
+
+        window.open(
+            `https://wa.me/5561981901379?text=${encodeURIComponent(whatsappMessage)}`,
+            '_blank',
+            'noopener,noreferrer'
+        );
+
+        leadForm.reset();
+
+        if (leadFeedback) {
+            leadFeedback.textContent = 'Abrimos o WhatsApp com sua mensagem. Se não abriu, clique no botão verde no canto da tela.';
+            leadFeedback.classList.remove('hidden');
+            leadFeedback.classList.add('text-green-700');
+        }
+
+        if (leadSubmit instanceof HTMLButtonElement) {
+            leadSubmit.disabled = false;
+            leadSubmit.textContent = leadSubmitDefaultLabel;
+        }
+    });
+</script>

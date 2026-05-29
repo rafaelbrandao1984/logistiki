@@ -4,9 +4,14 @@ import '../styles/global.css';
 export interface Props {
 	title: string;
 	description?: string;
+	canonicalUrl?: string;
 }
 
-const { title, description = "Contabilidade em Brasília especializada em Gestão Fiscal, Contabilidade Eleitoral, Terceiro Setor e BPO Financeiro. Atendimento estratégico para empresas e candidatos no DF." } = Astro.props;
+const {
+	title,
+	description = "Contabilidade em Brasília especializada em Gestão Fiscal, Contabilidade Eleitoral, Terceiro Setor e BPO Financeiro. Atendimento estratégico para empresas e candidatos no DF.",
+	canonicalUrl = "https://www.logistiki.com.br/",
+} = Astro.props;
 ---
 
 <!DOCTYPE html>
@@ -19,10 +24,14 @@ const { title, description = "Contabilidade em Brasília especializada em Gestã
     <meta name="description" content={description}>
     <meta property="og:title" content={title}>
     <meta property="og:description" content={description}>
-    <meta property="og:url" content="https://www.logistiki.com.br/">
+    <meta property="og:url" content={canonicalUrl}>
     <meta property="og:image" content="https://www.logistiki.com.br/imagem-preview.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
     <meta property="og:type" content="website">
-    <link rel="canonical" href="https://www.logistiki.com.br/">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:site_name" content="Logistiki">
+    <link rel="canonical" href={canonicalUrl}>
     
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=logistiki-20260506">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=logistiki-20260506">
@@ -50,7 +59,7 @@ const { title, description = "Contabilidade em Brasília especializada em Gestã
       gtag('config', 'G-72VT7EWDF1');
     </script>
 </head>
-<body class="bg-slate-50 text-slate-900 overflow-x-hidden">
+<body class="bg-white text-slate-900 overflow-x-hidden">
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NWQVCBFN"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>

@@ -1,5 +1,6 @@
 /**
- * Logistiki — identidade visual (navy profundo, sky #00adef, dourado metálico).
+ * Logistiki — identidade visual (sky #29ABE2, dourado metálico, branco).
+ * Alinhada com cartão de visitas do cliente.
  * Carregar depois do Tailwind CDN.
  */
 
@@ -9,13 +10,23 @@
   --navy: #06294a;
   --navy-mid: #0a3d66;
   --navy-footer: #041c34;
-  --sky: #00adef;
-  --sky-soft: rgba(0, 173, 239, 0.14);
+
+  /* Sky azul claro do cartão do cliente */
+  --sky: #29ABE2;
+  --sky-light: #4DBFE8;
+  --sky-soft: rgba(41, 171, 226, 0.14);
+  --sky-medium: rgba(41, 171, 226, 0.25);
+
+  /* Dourado quente do cartão */
   --gold-light: #f7e08a;
-  --gold-mid: #d4af37;
+  --gold-mid: #C9A735;
   --gold-dark: #9a7029;
-  --gold-solid: #d7ad45;
+  --gold-solid: #C9A735;
+
+  /* Backgrounds claros */
   --white: #ffffff;
+  --light-gray: #f0f4f8;
+  --card-bg: #ffffff;
 }
 
 *,
@@ -48,6 +59,10 @@ h3 {
 
 .bg-gold {
   background-color: var(--gold-solid);
+}
+
+.bg-light-gray {
+  background-color: var(--light-gray);
 }
 
 .text-navy {
@@ -111,6 +126,20 @@ h3 {
   border-color: var(--gold-solid);
 }
 
+.especialidade-card {
+  background: var(--sky);
+  border: 2px solid var(--sky);
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.especialidade-card:hover {
+  background: var(--navy);
+  border-color: var(--navy);
+}
+
 .hover\:shadow-brand-gold:hover {
   box-shadow: 0 0 20px color-mix(in srgb, var(--gold-solid) 45%, transparent);
 }
@@ -126,27 +155,69 @@ h3 {
     var(--gold-light) 0%,
     var(--gold-mid) 38%,
     var(--gold-dark) 72%,
-    #c9982e 100%
+    #a07820 100%
   );
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
   -webkit-text-fill-color: transparent;
-  filter: drop-shadow(0 0 0.55px rgba(255, 255, 255, 0.45))
-    drop-shadow(0 1px 2px rgba(0, 10, 30, 0.55));
+  filter: drop-shadow(0 0 0.4px rgba(0, 0, 0, 0.2))
+    drop-shadow(0 1px 2px rgba(0, 0, 0, 0.15));
+}
+
+/* brand-wordmark variante para fundo escuro (nav/footer) */
+.brand-wordmark-dark {
+  display: inline-block;
+  background: linear-gradient(
+    165deg,
+    var(--gold-light) 0%,
+    var(--gold-mid) 38%,
+    var(--gold-dark) 72%,
+    #a07820 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 0 0.55px rgba(255,255,255,0.45))
+    drop-shadow(0 1px 2px rgba(0,10,30,0.55));
 }
 
 .glow-sky {
   background: radial-gradient(
     circle at center,
-    rgba(0, 173, 239, 0.22) 0%,
-    rgba(0, 173, 239, 0.06) 45%,
+    rgba(41, 171, 226, 0.28) 0%,
+    rgba(41, 171, 226, 0.10) 45%,
     transparent 70%
   );
 }
 
+/* Utility classes para sky */
+.text-sky {
+  color: var(--sky);
+}
+
+.bg-sky {
+  background-color: var(--sky);
+}
+
+.border-sky {
+  border-color: var(--sky);
+}
+
+/* Textura sutil para fundos claros */
+.hero-gradient::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.025;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-size: 180px 180px;
+}
+
 /* Textura sutil sobre fundos escuros */
-.hero-gradient::after,
 .servicos-bg::after,
 .hero-internal::after,
 .hero-partners::after,
@@ -161,15 +232,31 @@ h3 {
   background-size: 180px 180px;
 }
 
+/* Hero principal — fundo branco com bloco sky à direita (inspirado no cartão) */
 .hero-gradient {
   position: relative;
   isolation: isolate;
-  background:
-    radial-gradient(ellipse 90% 55% at 85% 12%, var(--sky-soft), transparent 42%),
-    radial-gradient(ellipse 60% 40% at 10% 88%, rgba(0, 173, 239, 0.08), transparent 45%),
-    linear-gradient(135deg, rgba(0, 21, 46, 0.97) 0%, rgba(6, 41, 74, 0.92) 55%, rgba(2, 25, 52, 0.96) 100%),
-    url("../logistiki-identidade.png") no-repeat center center;
-  background-size: cover;
+  background: var(--white);
+  overflow: hidden;
+}
+
+/* Bloco sky geométrico decorativo no topo-direita (evoca o cartão azul) */
+.hero-gradient::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 42%;
+  height: 100%;
+  background: linear-gradient(
+    160deg,
+    var(--sky) 0%,
+    var(--sky-light) 60%,
+    rgba(41, 171, 226, 0.55) 100%
+  );
+  clip-path: polygon(18% 0%, 100% 0%, 100% 100%, 0% 100%);
+  z-index: 0;
+  pointer-events: none;
 }
 
 .hero-gradient > * {
@@ -180,12 +267,26 @@ h3 {
 .servicos-bg {
   position: relative;
   isolation: isolate;
-  background:
-    linear-gradient(135deg, rgba(0, 21, 46, 0.94) 0%, rgba(6, 41, 74, 0.9) 100%),
-    url("https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1920&q=80")
-      no-repeat center center;
-  background-size: cover;
-  background-attachment: fixed;
+  background: var(--navy);
+  overflow: hidden;
+}
+
+/* Acento sky lateral no fundo de serviços */
+.servicos-bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30%;
+  height: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(41, 171, 226, 0.18) 0%,
+    rgba(41, 171, 226, 0.06) 100%
+  );
+  clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
+  z-index: 0;
+  pointer-events: none;
 }
 
 .servicos-bg > * {
@@ -222,13 +323,28 @@ h3 {
 .hero-partners {
   position: relative;
   isolation: isolate;
-  background:
-    radial-gradient(ellipse 85% 50% at 78% 18%, var(--sky-soft), transparent 38%),
-    linear-gradient(135deg, rgba(0, 21, 46, 0.98) 0%, rgba(8, 46, 76, 0.93) 100%),
-    url("../logistiki-identidade.png") no-repeat center center;
-  background-size: cover;
-  padding-top: 160px;
-  padding-bottom: 96px;
+  background: var(--white);
+  overflow: hidden;
+  padding-top: 128px;
+  padding-bottom: 40px;
+}
+
+.hero-partners::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 38%;
+  height: 100%;
+  background: linear-gradient(
+    160deg,
+    var(--sky) 0%,
+    var(--sky-light) 70%,
+    rgba(41, 171, 226, 0.45) 100%
+  );
+  clip-path: polygon(20% 0%, 100% 0%, 100% 100%, 0% 100%);
+  z-index: 0;
+  pointer-events: none;
 }
 
 .hero-partners > * {
@@ -240,12 +356,26 @@ h3 {
 .hero {
   position: relative;
   isolation: isolate;
-  background:
-    radial-gradient(ellipse 75% 55% at 70% 20%, var(--sky-soft), transparent 45%),
-    linear-gradient(135deg, rgba(0, 21, 46, 0.82) 0%, rgba(6, 41, 74, 0.88) 100%),
-    url("https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1920&q=80")
-      no-repeat center center;
-  background-size: cover;
+  background: var(--white);
+  overflow: hidden;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40%;
+  height: 100%;
+  background: linear-gradient(
+    160deg,
+    var(--sky) 0%,
+    var(--sky-light) 65%,
+    rgba(41, 171, 226, 0.5) 100%
+  );
+  clip-path: polygon(18% 0%, 100% 0%, 100% 100%, 0% 100%);
+  z-index: 0;
+  pointer-events: none;
 }
 
 .hero > * {

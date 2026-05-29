@@ -5,62 +5,172 @@ import Footer from '../components/Footer.astro';
 import WhatsAppButton from '../components/WhatsAppButton.astro';
 ---
 
-<Layout title="Parceiros e Soluções Complementares | Logistiki" description="Parceiros Logistiki para ERP, PDV, certificado digital e suporte operacional em Brasília.">
+<Layout title="Parceiros e Soluções Complementares | Logistiki" description="Parceiros Logistiki: D&B para automação comercial e AeraCloud para tecnologia, sites e nuvem em Brasília." canonicalUrl="https://www.logistiki.com.br/parceiros">
     <Navbar />
     <header class="hero-partners px-6 text-center">
         <div class="max-w-5xl mx-auto">
-            <span class="text-gold uppercase tracking-[0.3em] text-sm font-bold mb-4 block">Ecossistema Logistiki</span>
-            <h1 class="text-4xl md:text-6xl text-white mb-6 leading-tight">Parceiros de <span class="text-gold italic">soluções complementares</span></h1>
-            <p class="text-lg md:text-xl text-gray-200 max-w-3xl mx-auto font-light leading-relaxed">
-                Soluções de apoio para empresas que precisam conectar gestão contábil, operação comercial, documentação digital e processos administrativos.
+            <h1 class="text-4xl md:text-6xl text-navy mb-4 leading-tight">Parceiros de <span class="text-gold italic">soluções complementares</span></h1>
+            <p class="text-lg md:text-xl text-slate-600 max-w-3xl mx-auto font-light leading-relaxed">
+                Soluções de apoio para empresas que precisam conectar gestão contábil, tecnologia, operação comercial e documentação digital.
             </p>
         </div>
     </header>
 
     <main>
-        <section class="py-24 bg-white">
+
+        <!-- ── PARCEIRO 1: D&B ── -->
+        <section class="pt-8 pb-20 bg-white">
             <div class="container mx-auto px-6 lg:px-20">
-                <div class="grid lg:grid-cols-[0.9fr_1.1fr] gap-12 items-center">
-                    <div class="bg-navy rounded-2xl border border-brand-gold-30 p-8 text-white shadow-2xl">
-                        <p class="text-xs uppercase tracking-[0.35em] text-gold font-bold mb-4">Parceiro</p>
-                        <h2 class="text-5xl mb-4">D&B</h2>
-                        <p class="text-slate-300 leading-relaxed">
+
+                <div class="flex items-center gap-4 mb-8">
+                    <div class="w-1 h-10 rounded-full" style="background: var(--sky);"></div>
+                    <span class="text-xs uppercase tracking-[0.35em] font-bold" style="color: var(--sky);">Parceiro 01</span>
+                </div>
+
+                <div class="grid lg:grid-cols-[0.85fr_1.15fr] gap-12 items-start">
+
+                    <!-- Card identidade D&B -->
+                    <div class="bg-navy rounded-2xl border border-brand-gold-30 p-8 text-white shadow-2xl lg:sticky lg:top-28">
+                        <p class="text-xs uppercase tracking-[0.35em] text-gold font-bold mb-5">Automação Comercial</p>
+                        <div class="flex items-center gap-4 mb-6">
+                            <div class="text-left">
+                                <p class="text-3xl font-bold leading-none tracking-tight brand-wordmark-dark" style="font-family: 'Playfair Display', Georgia, serif;">D&amp;B</p>
+                                <p class="text-[10px] uppercase tracking-[0.35em] text-gold/80 mt-2 font-semibold"></p>
+                            </div>
+                        </div>
+                        <p class="text-slate-300 leading-relaxed mb-8">
                             Apoio em automação comercial e rotinas operacionais para negócios que precisam integrar vendas, estoque, financeiro e documentação digital.
                         </p>
-                        <div class="mt-8 grid grid-cols-2 gap-3 text-sm">
-                            <a href="sistema-erp.html" class="border border-white/10 rounded-lg p-4 hover:border-brand-gold-solid hover:text-gold transition">ERP</a>
-                            <a href="kit-pdv.html" class="border border-white/10 rounded-lg p-4 hover:border-brand-gold-solid hover:text-gold transition">KIT PDV</a>
-                            <a href="certificado-digital.html" class="border border-white/10 rounded-lg p-4 hover:border-brand-gold-solid hover:text-gold transition">Certificado Digital</a>
-                            <a href="apoio-administrativo.html" class="border border-white/10 rounded-lg p-4 hover:border-brand-gold-solid hover:text-gold transition">Suporte Operacional</a>
+                        <div class="grid grid-cols-2 gap-3 text-sm mb-8">
+                            <a href="sistema-erp.html" class="border border-white/10 rounded-lg p-3 text-center hover:border-brand-gold-solid hover:text-gold transition">ERP</a>
+                            <a href="kit-pdv.html" class="border border-white/10 rounded-lg p-3 text-center hover:border-brand-gold-solid hover:text-gold transition">KIT PDV</a>
+                            <a href="certificado-digital.html" class="border border-white/10 rounded-lg p-3 text-center hover:border-brand-gold-solid hover:text-gold transition">Certificado Digital</a>
+                            <a href="apoio-administrativo.html" class="border border-white/10 rounded-lg p-3 text-center hover:border-brand-gold-solid hover:text-gold transition">Suporte Operacional</a>
                         </div>
+                        <a href="https://wa.me/5561993905938" target="_blank" rel="noopener"
+                           class="block text-center py-3 rounded-full font-bold transition-all text-white hover:opacity-80"
+                           style="background: var(--sky);">
+                            Falar com D&amp;B
+                        </a>
                     </div>
 
+                    <!-- Detalhes D&B -->
                     <div class="space-y-8">
                         <div>
-                            <h2 class="text-4xl text-navy mb-4">Soluções integradas para a rotina da sua empresa.</h2>
+                            <h2 class="text-3xl text-navy mb-4 leading-snug">Soluções integradas para a <span class="text-gold italic">rotina da sua empresa.</span></h2>
                             <p class="text-slate-600 text-lg leading-relaxed text-justify">
-                                Com o apoio de parceiros especializados, a Logistiki amplia o suporte ao cliente em áreas como ERP, PDV, certificado digital e organização operacional, mantendo a contabilidade alinhada aos dados do dia a dia.
+                                Com o apoio da D&amp;B, a Logistiki amplia o suporte ao cliente em áreas como ERP, PDV, certificado digital e organização operacional, mantendo a contabilidade alinhada aos dados do dia a dia.
                             </p>
                         </div>
                         <div class="grid md:grid-cols-3 gap-4">
-                            <div class="bg-slate-50 border border-slate-100 rounded-lg p-6">
-                                <h3 class="text-navy text-lg mb-3">ERP</h3>
-                                <p class="text-sm text-slate-600 leading-relaxed">Implantação e organização de processos para vendas, estoque e financeiro.</p>
-                            </div>
-                            <div class="bg-slate-50 border border-slate-100 rounded-lg p-6">
-                                <h3 class="text-navy text-lg mb-3">PDV</h3>
-                                <p class="text-sm text-slate-600 leading-relaxed">Frente de caixa e rotina comercial integrada ao fechamento contábil.</p>
-                            </div>
-                            <div class="bg-slate-50 border border-slate-100 rounded-lg p-6">
-                                <h3 class="text-navy text-lg mb-3">Digital</h3>
-                                <p class="text-sm text-slate-600 leading-relaxed">Certificado digital e suporte para documentos eletrônicos essenciais.</p>
-                            </div>
+                            <a href="sistema-erp.html" class="rounded-xl p-6 text-white block hover:opacity-90 transition-all hover:shadow-lg hover:-translate-y-1" style="background: var(--sky);">
+                                <h3 class="text-white text-lg mb-2 font-bold">ERP</h3>
+                                <p class="text-sm text-white/80 leading-relaxed">Implantação e organização de processos para vendas, estoque e financeiro.</p>
+                            </a>
+                            <a href="kit-pdv.html" class="rounded-xl p-6 text-white block hover:opacity-90 transition-all hover:shadow-lg hover:-translate-y-1" style="background: var(--sky);">
+                                <h3 class="text-white text-lg mb-2 font-bold">KIT PDV</h3>
+                                <p class="text-sm text-white/80 leading-relaxed">Frente de caixa e rotina comercial integrada ao fechamento contábil.</p>
+                            </a>
+                            <a href="certificado-digital.html" class="rounded-xl p-6 text-white block hover:opacity-90 transition-all hover:shadow-lg hover:-translate-y-1" style="background: var(--sky);">
+                                <h3 class="text-white text-lg mb-2 font-bold">Certificado Digital</h3>
+                                <p class="text-sm text-white/80 leading-relaxed">e-CPF e e-CNPJ para assinar documentos com validade jurídica.</p>
+                            </a>
                         </div>
-                        <a href="https://wa.me/5561981901379" target="_blank" rel="noopener" class="inline-block bg-gold text-navy px-8 py-4 rounded-full font-bold hover:bg-navy hover:text-white transition-all">Falar com a Logistiki</a>
+                        <div class="p-6 rounded-xl border-l-4" style="background: rgba(41,171,226,0.06); border-color: var(--sky);">
+                            <p class="text-slate-600 text-sm leading-relaxed italic">
+                                "A D&amp;B atua como braço operacional da Logistiki — quando seu negócio precisa de sistema, PDV ou certificado digital, a integração com a nossa contabilidade já está pronta."
+                            </p>
+                        </div>
                     </div>
+
                 </div>
             </div>
         </section>
+
+        <!-- Divisor -->
+        <div class="h-px mx-20" style="background: linear-gradient(to right, transparent, rgba(41,171,226,0.3), transparent);"></div>
+
+        <!-- ── PARCEIRO 2: AeraCloud ── -->
+        <section class="pt-12 pb-20 bg-light-gray">
+            <div class="container mx-auto px-6 lg:px-20">
+
+                <div class="flex items-center gap-4 mb-8">
+                    <div class="w-1 h-10 rounded-full" style="background: var(--gold-solid);"></div>
+                    <span class="text-xs uppercase tracking-[0.35em] font-bold" style="color: var(--gold-solid);">Parceiro 02</span>
+                </div>
+
+                <div class="grid lg:grid-cols-[1.15fr_0.85fr] gap-12 items-start">
+
+                    <!-- Detalhes AeraCloud -->
+                    <div class="space-y-8">
+                        <div>
+                            <h2 class="text-3xl text-navy mb-4 leading-snug">Tecnologia, presença digital e <span class="text-gold italic">infraestrutura em nuvem.</span></h2>
+                            <p class="text-slate-600 text-lg leading-relaxed text-justify">
+                                A AeraCloud é a parceira de tecnologia da Logistiki. Cuida da presença digital dos clientes — do site ao suporte técnico — garantindo que a operação digital esteja sempre funcionando enquanto a contabilidade fecha os números.
+                            </p>
+                        </div>
+                        <div class="grid md:grid-cols-3 gap-4">
+                            <a href="https://www.aeracloud.com.br/#servicos" target="_blank" rel="noopener" class="rounded-xl p-6 text-white block hover:opacity-90 transition-all hover:shadow-lg hover:-translate-y-1" style="background: var(--navy);">
+                                <h3 class="text-gold text-lg mb-2 font-bold">Sites & Landing Pages</h3>
+                                <p class="text-sm text-slate-300 leading-relaxed">Criação de sites profissionais e páginas de conversão para atrair mais clientes.</p>
+                            </a>
+                            <a href="https://www.aeracloud.com.br/#servicos" target="_blank" rel="noopener" class="rounded-xl p-6 text-white block hover:opacity-90 transition-all hover:shadow-lg hover:-translate-y-1" style="background: var(--navy);">
+                                <h3 class="text-gold text-lg mb-2 font-bold">Suporte Técnico</h3>
+                                <p class="text-sm text-slate-300 leading-relaxed">Manutenção, suporte remoto e consultoria de TI para o dia a dia da sua empresa.</p>
+                            </a>
+                            <a href="https://www.aeracloud.com.br/#servicos" target="_blank" rel="noopener" class="rounded-xl p-6 text-white block hover:opacity-90 transition-all hover:shadow-lg hover:-translate-y-1" style="background: var(--navy);">
+                                <h3 class="text-gold text-lg mb-2 font-bold">Infraestrutura Cloud</h3>
+                                <p class="text-sm text-slate-300 leading-relaxed">Servidores, e-mail corporativo e armazenamento em nuvem com segurança e escalabilidade.</p>
+                            </a>
+                        </div>
+                        <div class="p-6 rounded-xl border-l-4" style="background: rgba(201,167,53,0.06); border-color: var(--gold-solid);">
+                            <p class="text-slate-600 text-sm leading-relaxed italic">
+                                "A AeraCloud cuida da tecnologia para que o cliente foque no negócio. Em parceria com a Logistiki, oferecemos um ecossistema completo: contabilidade inteligente + presença digital profissional."
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Card identidade AeraCloud -->
+                    <div class="rounded-2xl p-8 text-white shadow-2xl lg:sticky lg:top-28" style="background: var(--navy-deep); border: 1px solid rgba(201,167,53,0.3);">
+                        <p class="text-xs uppercase tracking-[0.35em] font-bold mb-5" style="color: var(--gold-solid);">Tecnologia & Nuvem</p>
+                        <div class="flex items-start gap-3 mb-6">
+                            <div>
+                                <p class="text-2xl md:text-3xl font-bold leading-none tracking-tight">
+                                    <span class="text-white">Aera</span><span style="color: #5eead4;">Cloud</span>
+                                </p>
+                                <p class="text-xs text-slate-400 mt-2 uppercase tracking-widest">por Rafael Brandão</p>
+                            </div>
+                        </div>
+                        <p class="text-slate-300 leading-relaxed mb-8">
+                            Sites, sistemas, suporte técnico e infraestrutura em nuvem para empresas que precisam de presença digital sólida e tecnologia confiável.
+                        </p>
+                        <div class="grid grid-cols-1 gap-3 text-sm mb-8">
+                            <div class="border border-white/10 rounded-lg p-3 flex items-center gap-3">
+                                <span style="color: var(--sky);">🌐</span> Criação de Sites e Landing Pages
+                            </div>
+                            <div class="border border-white/10 rounded-lg p-3 flex items-center gap-3">
+                                <span style="color: var(--sky);">🛠️</span> Suporte e Manutenção de TI
+                            </div>
+                            <div class="border border-white/10 rounded-lg p-3 flex items-center gap-3">
+                                <span style="color: var(--sky);">☁️</span> Servidores e Nuvem
+                            </div>
+                            <div class="border border-white/10 rounded-lg p-3 flex items-center gap-3">
+                                <span style="color: var(--sky);">✉️</span> E-mail Corporativo
+                            </div>
+                        </div>
+
+                        <a href="https://www.aeracloud.com.br" target="_blank" rel="noopener"
+                           class="block text-center py-3 rounded-full font-bold transition-all text-navy hover:opacity-90"
+                           style="background: var(--gold-solid);">
+                            Falar com AeraCloud
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
     </main>
     <Footer />
     <WhatsAppButton />
