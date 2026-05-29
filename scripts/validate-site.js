@@ -14,7 +14,14 @@ function listHtmlFiles() {
 }
 
 function existsPublicFile(relativePath) {
-  return fs.existsSync(path.join(publicDir, relativePath));
+  const normalized = relativePath.replace(/^\/+/, '');
+  const candidates = [
+    normalized,
+    normalized.endsWith('.html') ? normalized : `${normalized}.html`,
+    path.posix.join(normalized, 'index.html'),
+  ];
+
+  return candidates.some((candidate) => fs.existsSync(path.join(publicDir, candidate)));
 }
 
 function localPathFromUrl(value) {
