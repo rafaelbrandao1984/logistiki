@@ -127,17 +127,225 @@ h3 {
 }
 
 .especialidade-card {
-  background: var(--sky);
-  border: 2px solid var(--sky);
+  background: linear-gradient(
+    160deg,
+    color-mix(in srgb, var(--sky) 75%, var(--white)) 0%,
+    var(--sky) 45%,
+    color-mix(in srgb, var(--sky) 70%, var(--navy)) 100%
+  );
+  border: 2px solid color-mix(in srgb, var(--navy) 22%, var(--sky));
+  color: var(--navy);
   transition:
     background-color 0.3s ease,
+    background 0.3s ease,
     border-color 0.3s ease,
-    box-shadow 0.3s ease;
+    box-shadow 0.3s ease,
+    color 0.3s ease;
+}
+
+.especialidade-card :is(h3, h4) {
+  color: var(--navy);
+}
+
+.especialidade-card :is(p, li) {
+  color: color-mix(in srgb, var(--navy) 90%, transparent);
+}
+
+.especialidade-card strong {
+  color: var(--navy);
+  font-weight: 700;
+}
+
+.especialidade-card li > span:first-child {
+  color: color-mix(in srgb, var(--navy) 50%, transparent);
+}
+
+.especialidade-card a:not(.btn-cta-on-sky):not(.btn-cta-form) {
+  color: var(--navy);
+}
+
+.especialidade-card a:not(.btn-cta-on-sky):not(.btn-cta-form):hover {
+  color: var(--gold-solid);
 }
 
 .especialidade-card:hover {
   background: var(--navy);
   border-color: var(--navy);
+  color: var(--white);
+}
+
+.especialidade-card:hover :is(h3, h4) {
+  color: var(--white);
+}
+
+.especialidade-card:hover :is(p, li) {
+  color: rgba(255, 255, 255, 0.93);
+}
+
+.especialidade-card:hover strong {
+  color: var(--white);
+}
+
+.especialidade-card:hover li > span:first-child {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.especialidade-card:hover a:not(.btn-cta-on-sky):not(.btn-cta-form) {
+  color: var(--white);
+}
+
+.especialidade-card:hover a:not(.btn-cta-on-sky):not(.btn-cta-form):hover {
+  color: var(--gold-solid);
+}
+
+/* Feedback tátil em telas touch (substitui hover) */
+@media (hover: none) {
+  .especialidade-card:active {
+    background: var(--navy);
+    border-color: var(--navy);
+    color: var(--white);
+  }
+
+  .especialidade-card:active :is(h3, h4) {
+    color: var(--white);
+  }
+
+  .especialidade-card:active :is(p, li) {
+    color: rgba(255, 255, 255, 0.93);
+  }
+
+  .especialidade-card:active strong {
+    color: var(--white);
+  }
+
+  .especialidade-card:active li > span:first-child {
+    color: rgba(255, 255, 255, 0.65);
+  }
+
+  .especialidade-card:active a:not(.btn-cta-on-sky):not(.btn-cta-form) {
+    color: var(--white);
+  }
+}
+
+.especialidade-card--content {
+  text-align: left;
+}
+
+/* Nichos — cards escuros com borda sky (quem atendemos) */
+.nichos-section {
+  background: var(--navy-deep);
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+}
+
+.nichos-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(
+    ellipse 80% 60% at 50% 0%,
+    rgba(41, 171, 226, 0.12) 0%,
+    transparent 65%
+  );
+  z-index: 0;
+}
+
+.nichos-section > * {
+  position: relative;
+  z-index: 1;
+}
+
+.nicho-card {
+  background: color-mix(in srgb, var(--navy) 88%, var(--navy-deep));
+  border: 1px solid color-mix(in srgb, var(--sky) 35%, transparent);
+  border-radius: 0.75rem;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  box-shadow:
+    0 0 24px color-mix(in srgb, var(--sky) 12%, transparent),
+    inset 0 1px 0 rgba(255, 255, 255, 0.06);
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease,
+    transform 0.3s ease;
+}
+
+.nicho-card:hover {
+  border-color: color-mix(in srgb, var(--sky) 70%, transparent);
+  box-shadow:
+    0 0 32px color-mix(in srgb, var(--sky) 28%, transparent),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  transform: translateY(-4px);
+}
+
+.nicho-card__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  margin: 0 auto 1.25rem;
+  color: var(--sky);
+}
+
+.nicho-card__icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.nicho-card h3 {
+  color: var(--white);
+  font-family: "Montserrat", system-ui, sans-serif;
+  font-weight: 700;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 0.75rem;
+}
+
+.nicho-card p {
+  color: rgba(255, 255, 255, 0.62);
+  font-size: 0.8125rem;
+  line-height: 1.65;
+}
+
+.nicho-card--content {
+  text-align: left;
+}
+
+.nicho-card h4 {
+  color: var(--white);
+  font-family: "Montserrat", system-ui, sans-serif;
+  font-weight: 700;
+  font-size: 0.875rem;
+  line-height: 1.45;
+  margin-bottom: 0.75rem;
+}
+
+.nicho-card--cta {
+  text-align: center;
+}
+
+.nicho-card--cta p:first-child {
+  color: var(--white);
+  font-weight: 700;
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+}
+
+@media (hover: none) {
+  .nicho-card:active {
+    border-color: color-mix(in srgb, var(--sky) 70%, transparent);
+    transform: translateY(-2px);
+  }
+}
+
+@media (max-width: 767px) {
+  .nicho-card {
+    padding: 1.5rem 1.25rem;
+  }
 }
 
 .hover\:shadow-brand-gold:hover {
@@ -203,6 +411,33 @@ h3 {
 
 .border-sky {
   border-color: var(--sky);
+}
+
+/* CTAs — contraste correto sobre fundo sky */
+.btn-cta-on-sky {
+  background-color: var(--white);
+  color: var(--navy);
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    box-shadow 0.3s ease,
+    transform 0.3s ease;
+}
+
+.btn-cta-on-sky:hover {
+  background-color: var(--navy);
+  color: var(--white);
+}
+
+.btn-cta-form {
+  background-color: var(--navy);
+  color: var(--white);
+  transition: opacity 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-cta-form:hover {
+  opacity: 0.92;
+  box-shadow: 0 10px 25px rgba(6, 41, 74, 0.25);
 }
 
 /* Textura sutil para fundos claros */
@@ -408,4 +643,25 @@ h3 {
 nav.site-nav a.transition:hover,
 nav.site-nav button.transition:hover {
   color: var(--sky);
+}
+
+/* Ajustes mobile — cards, hero e tipografia */
+@media (max-width: 767px) {
+  .especialidade-card.group.p-8,
+  .especialidade-card.especialidade-card--content.p-8 {
+    padding: 1.25rem;
+  }
+
+  .especialidade-card--content :is(h3, h4) {
+    line-height: 1.45;
+  }
+
+  .hero-gradient {
+    min-height: auto;
+  }
+
+  .hero-internal {
+    padding-top: 7rem;
+    padding-bottom: 3rem;
+  }
 }

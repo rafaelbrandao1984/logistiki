@@ -7,20 +7,20 @@ import WhatsAppButton from '../components/WhatsAppButton.astro';
 
 <Layout title="Logistiki | Gestão Contábil Estratégica em Brasília" description="Contabilidade em Brasília especializada em Gestão Fiscal, Contabilidade Eleitoral, Terceiro Setor e BPO Financeiro. Atendimento estratégico para empresas e candidatos no DF." canonicalUrl="https://www.logistiki.com.br/">
     <Navbar />
-    <section class="min-h-screen flex items-center hero-gradient px-6 pt-24 pb-16">
+    <section class="min-h-0 lg:min-h-screen flex items-center hero-gradient px-6 pt-24 pb-12 md:pb-16">
         <div class="container mx-auto grid lg:grid-cols-[1.05fr_0.95fr] gap-12 items-center">
             <div class="max-w-3xl text-center lg:text-left">
-                <span class="text-navy uppercase tracking-[0.3em] text-sm font-bold mb-4 block">Excelência na Capital Federal</span>
-                <h1 class="text-4xl md:text-6xl lg:text-7xl text-navy mb-6 leading-tight">
+                <span class="text-navy uppercase tracking-[0.2em] sm:tracking-[0.3em] text-xs sm:text-sm font-bold mb-4 block">Excelência na Capital Federal</span>
+                <h1 class="text-3xl sm:text-4xl md:text-6xl lg:text-7xl text-navy mb-6 leading-tight">
                     Logistiki<br>
                     <span class="text-gold italic">inteligência contábil com visão estratégica</span>
                 </h1>
-                <p class="text-lg md:text-xl text-slate-600 mb-10 max-w-2xl mx-auto lg:mx-0 font-light leading-relaxed">
+                <p class="text-base sm:text-lg md:text-xl text-slate-600 mb-10 max-w-2xl mx-auto lg:mx-0 font-light leading-relaxed">
                     Contabilidade empresarial, eleitoral, fiscal e financeira para quem precisa de clareza técnica, segurança jurídica e decisões melhores em Brasília.
                 </p>
-                <div class="flex flex-col md:flex-row justify-center lg:justify-start gap-6">
-                <a href="#servicos" class="bg-sky text-white px-10 py-4 rounded-full font-bold hover:shadow-lg hover:bg-navy transform hover:-translate-y-1 transition-all">Nossos Serviços</a>
-                <a href="parceiros.html" class="border-2 border-navy text-navy px-10 py-4 rounded-full font-bold hover:bg-navy hover:text-white transform hover:-translate-y-1 transition-all">Parceiros e Soluções Complementares</a>
+                <div class="flex flex-col sm:flex-row justify-center lg:justify-start gap-4 sm:gap-6">
+                <a href="#servicos" class="w-full sm:w-auto bg-sky text-white px-6 sm:px-10 py-4 rounded-full font-bold text-sm sm:text-base text-center hover:shadow-lg hover:bg-navy transform hover:-translate-y-1 transition-all">Nossos Serviços</a>
+                <a href="parceiros.html" class="w-full sm:w-auto border-2 border-navy text-navy px-6 sm:px-10 py-4 rounded-full font-bold text-sm sm:text-base text-center hover:bg-navy hover:text-white transform hover:-translate-y-1 transition-all">Parceiros e Soluções Complementares</a>
                 </div>
             </div>
             <div class="relative hidden lg:block">
@@ -30,7 +30,7 @@ import WhatsAppButton from '../components/WhatsAppButton.astro';
         </div>
     </section>
 
-    <section id="sobre" class="py-24 bg-white overflow-hidden">
+    <section id="sobre" class="py-16 md:py-24 bg-white overflow-hidden">
         <div class="container mx-auto px-6 lg:px-20">
             <div class="grid md:grid-cols-2 gap-16 items-center">
                 <div class="order-2 md:order-1">
@@ -56,164 +56,173 @@ import WhatsAppButton from '../components/WhatsAppButton.astro';
         </div>
     </section>
 
-    <section id="especialidades" class="py-24 bg-slate-50">
+    <section id="nichos" class="nichos-section py-16 md:py-24">
         <div class="container mx-auto px-6 lg:px-20">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl mb-4 italic text-navy">Áreas em que <span class="text-gold">Atuamos</span></h2>
+            <div class="text-center mb-10 md:mb-16">
+                <h2 class="text-3xl sm:text-4xl mb-4 italic text-white">Nichos em que <span class="text-gold">Atuamos</span></h2>
+                <p class="text-white/60 text-sm max-w-2xl mx-auto leading-relaxed">Contabilidade especializada para perfis que exigem regras, prazos e estratégia distintos.</p>
                 <div class="w-24 h-1 bg-gold mx-auto mt-4"></div>
             </div>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                <div class="especialidade-card group p-8 rounded-xl text-center transition-all duration-400 shadow-sm hover:shadow-xl">
-                    <div class="text-4xl mb-4 transform group-hover:scale-110 transition-transform">🏢</div>
-                    <h3 class="text-white font-bold text-sm uppercase">Gestão Fiscal</h3>
-                    <p class="text-xs text-white/80 mt-2">Constituição e consultoria para a Reforma Tributária.</p>
-                </div>
-                <div class="especialidade-card group p-8 rounded-xl text-center transition-all duration-400 shadow-sm hover:shadow-xl">
-                    <div class="text-4xl mb-4 transform group-hover:scale-110 transition-transform">⚙️</div>
-                    <h3 class="text-white font-bold text-sm uppercase">Parceiros</h3>
-                    <p class="text-xs text-white/80 mt-2">ERP, PDV e Certificado Digital.</p>
-                </div>
-                <div class="especialidade-card group p-8 rounded-xl text-center transition-all duration-400 shadow-sm hover:shadow-xl">
-                    <div class="text-4xl mb-4 transform group-hover:scale-110 transition-transform">⚖️</div>
-                    <h3 class="text-white font-bold text-sm uppercase">Eleitoral & 3º Setor</h3>
-                    <p class="text-xs text-white/80 mt-2">SPCA e contabilidade especializada para ONGs e partidos.</p>
-                </div>
-                <div class="especialidade-card group p-8 rounded-xl text-center transition-all duration-400 shadow-sm hover:shadow-xl">
-                    <div class="text-4xl mb-4 transform group-hover:scale-110 transition-transform">📈</div>
-                    <h3 class="text-white font-bold text-sm uppercase">BPO Financeiro</h3>
-                    <p class="text-xs text-white/80 mt-2">Gestão financeira completa e fluxo de caixa.</p>
-                </div>
+                <a href="/gestao-fiscal.html" class="nicho-card group block">
+                    <div class="nicho-card__icon" aria-hidden="true">
+                        <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 21h18M5 21V7l8-4v18M19 21V11l-6-3M9 9v.01M9 12v.01M9 15v.01M9 18v.01"/></svg>
+                    </div>
+                    <h3>Empresas</h3>
+                    <p>Gestão fiscal, abertura e conformidade para ME, EPP e negócios em crescimento no Distrito Federal.</p>
+                </a>
+                <a href="/contabilidade-eleitoral.html" class="nicho-card group block">
+                    <div class="nicho-card__icon" aria-hidden="true">
+                        <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+                    </div>
+                    <h3>Eleitoral</h3>
+                    <p>Prestação de contas SPCA, campanhas e partidos — rigor técnico e cumprimento de prazos do TSE/TRE.</p>
+                </a>
+                <a href="/terceiro-setor.html" class="nicho-card group block">
+                    <div class="nicho-card__icon" aria-hidden="true">
+                        <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+                    </div>
+                    <h3>ONG</h3>
+                    <p>Terceiro setor com foco em imunidades, isenções e transparência nas prestações de contas ao fisco.</p>
+                </a>
+                <a href="/contabilidade-consultiva-brasilia.html" class="nicho-card group block">
+                    <div class="nicho-card__icon" aria-hidden="true">
+                        <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+                    </div>
+                    <h3>Profissionais</h3>
+                    <p>MEI, autônomos e pessoa física — IRPF, eSocial doméstico e regularização sem surpresas na temporada fiscal.</p>
+                </a>
             </div>
         </div>
     </section>
 
-    <section id="servicos" class="py-24 text-white" style="background: var(--sky);">
-        <div class="container mx-auto px-6">
-            <div class="text-center mb-20">
-                <h2 class="text-4xl mb-4 italic text-white">Serviços Prestados</h2>
-                <div class="w-24 h-1 bg-white/40 mx-auto"></div>
-            </div>
-            
-            <div class="grid md:grid-cols-2 gap-12 text-justify">
-                <div class="space-y-12">
-                    <div class="border-l-4 pl-6 p-8 rounded-r-xl" style="border-color: var(--gold-solid); background: rgba(255,255,255,0.15); backdrop-filter: blur(8px);">
-                        <h3 class="text-white text-xl font-bold uppercase mb-4">1. Contabilidade Consultiva e Gestão Fiscal</h3>
-                        <ul class="space-y-4 text-sm text-white/85">
-                            <li class="flex items-start"><span class="text-white/60 mr-2">▪</span><span><strong>Constituição e Regularização:</strong> Abertura, alteração e baixa de empresas.</span></li>
-                            <li class="flex items-start"><span class="text-white/60 mr-2">▪</span><span><strong>Gestão Fiscal:</strong> Apuração de impostos e consultoria para a Reforma Tributária.</span></li>
-                            <li class="flex items-start"><span class="text-white/60 mr-2">▪</span><span><strong>Folha de Pagamento (DP):</strong> Gestão completa de RH e obrigações do eSocial.</span></li>
-                            <li class="flex items-start"><span class="text-white/60 mr-2">▪</span><span><strong>Pessoa Física:</strong> Declaração de IRPF e análise de variação patrimonial.</span></li>
-                        </ul>
-                    </div>
-
-                    <div class="border-l-4 pl-6 p-8 rounded-r-xl" style="border-color: var(--gold-solid); background: rgba(255,255,255,0.15); backdrop-filter: blur(8px);">
-                        <h3 class="text-white text-xl font-bold uppercase mb-4">2. Parceiros e Soluções Complementares</h3>
-                        <ul class="space-y-4 text-sm text-white/85">
-                            <li class="flex items-start"><span class="text-white/60 mr-2">▪</span><span><strong>Automação Comercial:</strong> ERP, PDV e fluxos operacionais por parceiros técnicos.</span></li>
-                            <li class="flex items-start"><span class="text-white/60 mr-2">▪</span><span><strong>Certificado Digital:</strong> Apoio para emissão de e-CPF e e-CNPJ.</span></li>
-                            <li class="flex items-start"><span class="text-white/60 mr-2">▪</span><span><strong>Suporte Operacional:</strong> Integrações que conectam rotina, financeiro e fechamento contábil.</span></li>
-                            <li class="flex items-start"><span class="text-white/60 mr-2">▪</span><span><a href="parceiros.html" class="font-bold text-white underline underline-offset-4 hover:text-gold transition-colors">Ver parceiros</a></span></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="space-y-12">
-                    <div class="border-l-4 pl-6 p-8 rounded-r-xl" style="border-color: var(--gold-solid); background: rgba(255,255,255,0.15); backdrop-filter: blur(8px);">
-                        <h3 class="text-white text-xl font-bold uppercase mb-4">3. Especialidades: Terceiro Setor e Eleitoral</h3>
-                        <ul class="space-y-4 text-sm text-white/85">
-                            <li class="flex items-start"><span class="text-white/60 mr-2">▪</span><span><strong>Terceiro Setor:</strong> Foco em imunidades e isenções para ONGs e fundações.</span></li>
-                            <li class="flex items-start"><span class="text-white/60 mr-2">▪</span><span><strong>Contabilidade Eleitoral (SPCA):</strong> Prestação de contas rigorosa (TSE/TRE).</span></li>
-                        </ul>
-                    </div>
-
-                    <div class="border-l-4 pl-6 p-8 rounded-r-xl" style="border-color: var(--gold-solid); background: rgba(255,255,255,0.15); backdrop-filter: blur(8px);">
-                        <h3 class="text-white text-xl font-bold uppercase mb-4">4. BPO Financeiro 📊</h3>
-                        <ul class="space-y-4 text-sm text-white/85">
-                            <li class="flex items-start"><span class="text-white/60 mr-2">▪</span><span><strong>Contas a Pagar e Receber:</strong> Gestão de pagamentos e controle de recebimentos.</span></li>
-                            <li class="flex items-start"><span class="text-white/60 mr-2">▪</span><span><strong>Fluxo de Caixa:</strong> Gráficos de monitoramento e projeção financeira para tomada de decisão.</span></li>
-                            <li class="flex items-start"><span class="text-white/60 mr-2">▪</span><span><strong>Conciliação Bancária:</strong> Conferência diária de saldos e emissão de notas/boletos.</span></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="faq" class="py-24 bg-white">
-        <div class="container mx-auto px-6 max-w-5xl">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl mb-4 italic text-navy">Perguntas <span class="text-gold">Frequentes</span></h2>
-                <p class="text-slate-500 uppercase tracking-widest text-xs font-bold">Respostas rápidas para sua gestão em Brasília</p>
+    <section id="servicos" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-6 lg:px-20">
+            <div class="text-center mb-10 md:mb-16">
+                <h2 class="text-3xl sm:text-4xl mb-4 italic text-navy">Serviços <span class="text-gold">Prestados</span></h2>
+                <p class="text-slate-500 text-sm max-w-2xl mx-auto leading-relaxed">O que fazemos no dia a dia — entregas técnicas que sustentam a gestão do seu negócio ou entidade.</p>
                 <div class="w-24 h-1 bg-gold mx-auto mt-4"></div>
             </div>
 
-            <div class="grid md:grid-cols-2 gap-8">
-                <div class="space-y-6">
-                    <div class="p-6 bg-slate-50 rounded-lg border-l-4 border-gold shadow-sm hover:shadow-md transition-all text-justify">
-                        <h4 class="font-bold text-navy mb-2">Fui desenquadrado do MEI, e agora?</h4>
-                        <p class="text-gray-600 text-sm leading-relaxed">A Logistiki resolve: O desenquadramento exige uma transição rápida para Microempresa (ME) para evitar multas. Nós cuidamos de todo o processo de migração e escolha do novo regime tributário.</p>
-                    </div>
-
-                    <div class="p-6 bg-slate-50 rounded-lg border-l-4 border-gold shadow-sm hover:shadow-md transition-all text-justify">
-                        <h4 class="font-bold text-navy mb-2">Preciso contratar uma empregada doméstica. Como proceder?</h4>
-                        <p class="text-gray-600 text-sm leading-relaxed">A Logistiki soluciona: A gestão do eSocial Doméstico exige cuidado. Nós realizamos desde o cadastro até a emissão mensal das guias DAE, férias e 13º salário, com total segurança jurídica.</p>
-                    </div>
-
-                    <div class="p-6 bg-slate-50 rounded-lg border-l-4 border-gold shadow-sm hover:shadow-md transition-all text-justify">
-                        <h4 class="font-bold text-navy mb-2">Como a Reforma Tributária afeta minha empresa em 2026?</h4>
-                        <p class="text-gray-600 text-sm leading-relaxed">A Logistiki orienta: A transição já impacta o planejamento. Nós analisamos seu setor e desenhamos sua estratégia tributária para garantir conformidade e economia.</p>
-                    </div>
-
-                    <div class="p-6 bg-slate-50 rounded-lg border-l-4 border-gold shadow-sm hover:shadow-md transition-all text-justify">
-                        <h4 class="font-bold text-navy mb-2">O que é o SPCA e por que preciso de um contador especializado?</h4>
-                        <p class="text-gray-600 text-sm leading-relaxed">A Logistiki é especialista: O SPCA é obrigatório. Erros podem levar à desaprovação das contas e à inelegibilidade. Nossa equipe garante rigor técnico e cumprimento de todos os prazos eleitorais.</p>
-                    </div>
-
-                    <div class="p-6 bg-slate-50 rounded-lg border-l-4 border-gold shadow-sm hover:shadow-md transition-all text-justify">
-                        <h4 class="font-bold text-navy mb-2">O que é um sistema ERP e por que minha empresa precisa de um?</h4>
-                        <p class="text-gray-600 text-sm leading-relaxed"> O ERP é um software que centraliza toda a gestão do seu negócio. Ele integra vendas, estoque e financeiro em um só lugar, evitando erros manuais, agilizando a emissão de notas e permitindo que você tenha relatórios reais sobre o lucro da sua empresa.</p>
-                    </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="especialidade-card especialidade-card--content group p-8 rounded-xl transition-all duration-400 shadow-sm hover:shadow-xl">
+                    <div class="text-4xl mb-4 transform group-hover:scale-110 transition-transform">📋</div>
+                    <h3 class="text-white font-bold text-sm uppercase mb-4">Contabilidade Consultiva e Gestão Fiscal</h3>
+                    <ul class="space-y-3 text-sm text-white/85">
+                        <li class="flex items-start"><span class="text-white/60 mr-2 flex-shrink-0">▪</span><span><strong>Constituição e Regularização:</strong> Abertura, alteração e baixa de empresas.</span></li>
+                        <li class="flex items-start"><span class="text-white/60 mr-2 flex-shrink-0">▪</span><span><strong>Gestão Fiscal:</strong> Apuração de impostos e consultoria para a Reforma Tributária.</span></li>
+                        <li class="flex items-start"><span class="text-white/60 mr-2 flex-shrink-0">▪</span><span><strong>Folha de Pagamento (DP):</strong> Gestão completa de RH e obrigações do eSocial.</span></li>
+                        <li class="flex items-start"><span class="text-white/60 mr-2 flex-shrink-0">▪</span><span><strong>Pessoa Física:</strong> Declaração de IRPF e análise de variação patrimonial.</span></li>
+                    </ul>
                 </div>
 
-                <div class="space-y-6">
-                    <div class="p-6 bg-slate-50 rounded-lg border-l-4 border-gold shadow-sm hover:shadow-md transition-all text-justify">
-                        <h4 class="font-bold text-navy mb-2">Minha ONG ou Associação precisa de contabilidade específica?</h4>
-                        <p class="text-gray-600 text-sm leading-relaxed">A Logistiki atende: Sim! O Terceiro Setor possui regras próprias de imunidade e isenção. Garantimos conformidade com o fisco e transparência nas prestações de contas.</p>
-                    </div>
+                <div class="especialidade-card especialidade-card--content group p-8 rounded-xl transition-all duration-400 shadow-sm hover:shadow-xl">
+                    <div class="text-4xl mb-4 transform group-hover:scale-110 transition-transform">⚙️</div>
+                    <h3 class="text-white font-bold text-sm uppercase mb-4">Parceiros e Soluções Complementares</h3>
+                    <ul class="space-y-3 text-sm text-white/85">
+                        <li class="flex items-start"><span class="text-white/60 mr-2 flex-shrink-0">▪</span><span><strong>Automação Comercial:</strong> ERP, PDV e fluxos operacionais por parceiros técnicos.</span></li>
+                        <li class="flex items-start"><span class="text-white/60 mr-2 flex-shrink-0">▪</span><span><strong>Certificado Digital:</strong> Apoio para emissão de e-CPF e e-CNPJ.</span></li>
+                        <li class="flex items-start"><span class="text-white/60 mr-2 flex-shrink-0">▪</span><span><strong>Suporte Operacional:</strong> Integrações que conectam rotina, financeiro e fechamento contábil.</span></li>
+                        <li class="flex items-start"><span class="text-white/60 mr-2 flex-shrink-0">▪</span><span><a href="parceiros.html" class="font-bold underline underline-offset-4 hover:text-gold transition-colors">Ver parceiros</a></span></li>
+                    </ul>
+                </div>
 
-                    <div class="p-6 bg-slate-50 rounded-lg border-l-4 border-gold shadow-sm hover:shadow-md transition-all text-justify">
-                        <h4 class="font-bold text-navy mb-2">Preciso de sistema de vendas, ERP ou certificado digital. A Logistiki indica?</h4>
-                        <p class="text-gray-600 text-sm leading-relaxed">Sim. A Logistiki direciona essas demandas para parceiros de automação e suporte, mantendo a integração com a rotina contábil.</p>
-                    </div>
+                <div class="especialidade-card especialidade-card--content group p-8 rounded-xl transition-all duration-400 shadow-sm hover:shadow-xl">
+                    <div class="text-4xl mb-4 transform group-hover:scale-110 transition-transform">📋</div>
+                    <h3 class="text-white font-bold text-sm uppercase mb-4">Legalização e Regularização</h3>
+                    <ul class="space-y-3 text-sm text-white/85">
+                        <li class="flex items-start"><span class="text-white/60 mr-2 flex-shrink-0">▪</span><span><strong>Abertura de Empresa:</strong> Constituição, alteração e enquadramento tributário.</span></li>
+                        <li class="flex items-start"><span class="text-white/60 mr-2 flex-shrink-0">▪</span><span><strong>Licenciamento:</strong> Alvarás, licenças sanitárias e conformidade com o GDF.</span></li>
+                        <li class="flex items-start"><span class="text-white/60 mr-2 flex-shrink-0">▪</span><span><strong>Certificado Digital:</strong> Apoio para emissão de e-CPF e e-CNPJ.</span></li>
+                    </ul>
+                </div>
 
-                    <div class="p-6 bg-slate-50 rounded-lg border-l-4 border-gold shadow-sm hover:shadow-md transition-all text-justify">
-                        <h4 class="font-bold text-navy mb-2">A Logistiki também ajuda na organização do meu financeiro diário?</h4>
-                        <p class="text-gray-600 text-sm leading-relaxed">Sim. Oferecemos o suporte de BPO Financeiro para contas a pagar, receber e conciliação bancária, integrando tudo ao seu fechamento contábil.</p>
-                    </div>
-
-                    <div class="p-6 bg-slate-50 rounded-lg border-l-4 border-gold shadow-sm hover:shadow-md transition-all text-justify">
-                        <h4 class="font-bold text-navy mb-2">Eu já tenho um sistema. Vocês ajudam na migração ou configuração?</h4>
-                        <p class="text-gray-600 text-sm leading-relaxed">Sim. Encaminhamos a configuração, treinamento e automação para parceiros técnicos, preservando a consistência dos dados usados na contabilidade.</p>
-                    </div>                    
-
-                    <div class="p-10 rounded-lg text-center shadow-xl" style="background: var(--sky);">
-                        <p class="text-white font-bold mb-2 text-lg">Ainda tem dúvidas?</p>
-                        <p class="text-white/80 text-sm mb-6">Nossa equipe está pronta para te atender.</p>
-                        <a href="https://wa.me/5561981901379" target="_blank" rel="noopener" class="inline-block bg-white px-8 py-3 rounded-full font-bold transition-all shadow-lg hover:shadow-xl hover:scale-105" style="color: var(--navy);">Falar no WhatsApp</a>
-                    </div>
+                <div class="especialidade-card especialidade-card--content group p-8 rounded-xl transition-all duration-400 shadow-sm hover:shadow-xl">
+                    <div class="text-4xl mb-4 transform group-hover:scale-110 transition-transform">📊</div>
+                    <h3 class="text-white font-bold text-sm uppercase mb-4">BPO Financeiro</h3>
+                    <ul class="space-y-3 text-sm text-white/85">
+                        <li class="flex items-start"><span class="text-white/60 mr-2 flex-shrink-0">▪</span><span><strong>Contas a Pagar e Receber:</strong> Gestão de pagamentos e controle de recebimentos.</span></li>
+                        <li class="flex items-start"><span class="text-white/60 mr-2 flex-shrink-0">▪</span><span><strong>Fluxo de Caixa:</strong> Gráficos de monitoramento e projeção financeira para tomada de decisão.</span></li>
+                        <li class="flex items-start"><span class="text-white/60 mr-2 flex-shrink-0">▪</span><span><strong>Conciliação Bancária:</strong> Conferência diária de saldos e emissão de notas/boletos.</span></li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="contato" class="py-24 text-white" style="background: var(--sky);">
+    <section id="faq" class="nichos-section py-16 md:py-24">
+        <div class="container mx-auto px-6 lg:px-20">
+            <div class="text-center mb-10 md:mb-16">
+                <h2 class="text-3xl sm:text-4xl mb-4 italic text-white">Perguntas <span class="text-gold">Frequentes</span></h2>
+                <p class="text-white/60 uppercase tracking-widest text-xs font-bold">Respostas rápidas para sua gestão em Brasília</p>
+                <div class="w-24 h-1 bg-gold mx-auto mt-4"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="nicho-card nicho-card--content">
+                    <h4>Fui desenquadrado do MEI, e agora?</h4>
+                    <p>A Logistiki resolve: O desenquadramento exige uma transição rápida para Microempresa (ME) para evitar multas. Nós cuidamos de todo o processo de migração e escolha do novo regime tributário.</p>
+                </div>
+
+                <div class="nicho-card nicho-card--content">
+                    <h4>Preciso contratar uma empregada doméstica. Como proceder?</h4>
+                    <p>A Logistiki soluciona: A gestão do eSocial Doméstico exige cuidado. Nós realizamos desde o cadastro até a emissão mensal das guias DAE, férias e 13º salário, com total segurança jurídica.</p>
+                </div>
+
+                <div class="nicho-card nicho-card--content">
+                    <h4>Como a Reforma Tributária afeta minha empresa em 2026?</h4>
+                    <p>A Logistiki orienta: A transição já impacta o planejamento. Nós analisamos seu setor e desenhamos sua estratégia tributária para garantir conformidade e economia.</p>
+                </div>
+
+                <div class="nicho-card nicho-card--content">
+                    <h4>O que é o SPCA e por que preciso de um contador especializado?</h4>
+                    <p>A Logistiki é especialista: O SPCA é obrigatório. Erros podem levar à desaprovação das contas e à inelegibilidade. Nossa equipe garante rigor técnico e cumprimento de todos os prazos eleitorais.</p>
+                </div>
+
+                <div class="nicho-card nicho-card--content">
+                    <h4>O que é um sistema ERP e por que minha empresa precisa de um?</h4>
+                    <p>O ERP é um software que centraliza toda a gestão do seu negócio. Ele integra vendas, estoque e financeiro em um só lugar, evitando erros manuais, agilizando a emissão de notas e permitindo que você tenha relatórios reais sobre o lucro da sua empresa.</p>
+                </div>
+
+                <div class="nicho-card nicho-card--content">
+                    <h4>Minha ONG ou Associação precisa de contabilidade específica?</h4>
+                    <p>A Logistiki atende: Sim! O Terceiro Setor possui regras próprias de imunidade e isenção. Garantimos conformidade com o fisco e transparência nas prestações de contas.</p>
+                </div>
+
+                <div class="nicho-card nicho-card--content">
+                    <h4>Preciso de sistema de vendas, ERP ou certificado digital. A Logistiki indica?</h4>
+                    <p>Sim. A Logistiki direciona essas demandas para parceiros de automação e suporte, mantendo a integração com a rotina contábil.</p>
+                </div>
+
+                <div class="nicho-card nicho-card--content">
+                    <h4>A Logistiki também ajuda na organização do meu financeiro diário?</h4>
+                    <p>Sim. Oferecemos o suporte de BPO Financeiro para contas a pagar, receber e conciliação bancária, integrando tudo ao seu fechamento contábil.</p>
+                </div>
+
+                <div class="nicho-card nicho-card--content">
+                    <h4>Eu já tenho um sistema. Vocês ajudam na migração ou configuração?</h4>
+                    <p>Sim. Encaminhamos a configuração, treinamento e automação para parceiros técnicos, preservando a consistência dos dados usados na contabilidade.</p>
+                </div>
+            </div>
+
+            <div class="mt-10 md:mt-12 text-center px-2">
+                <div class="nicho-card nicho-card--cta block w-full max-w-lg mx-auto p-8 md:p-10">
+                    <p>Ainda tem dúvidas?</p>
+                    <p class="mb-6">Nossa equipe está pronta para te atender.</p>
+                    <a href="https://wa.me/5561981901379" target="_blank" rel="noopener" class="inline-block w-full sm:w-auto btn-cta-on-sky px-8 py-3 rounded-full font-bold shadow-lg hover:shadow-xl hover:scale-105">Falar no WhatsApp</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="py-16 md:py-24 text-white" style="background: var(--sky);">
         <div class="container mx-auto px-6 max-w-6xl">
-            <div class="grid lg:grid-cols-2 gap-16 items-start">
+            <div class="grid lg:grid-cols-2 gap-10 md:gap-16 items-start">
 
                 <div class="space-y-8">
                     <div>
                         <span class="text-white/70 uppercase tracking-[0.3em] text-xs font-bold mb-3 block">Diagnóstico Inicial Gratuito</span>
-                        <h2 class="text-4xl md:text-5xl text-white leading-tight mb-4">Pronto para organizar sua empresa?</h2>
+                        <h2 class="text-3xl sm:text-4xl md:text-5xl text-white leading-tight mb-4">Pronto para organizar sua empresa?</h2>
                         <p class="text-white/85 text-lg leading-relaxed">
                             Preencha o formulário e nossa equipe retorna com uma proposta personalizada no mesmo dia útil.
                         </p>
@@ -241,7 +250,7 @@ import WhatsAppButton from '../components/WhatsAppButton.astro';
                     <div class="pt-6 border-t border-white/20">
                         <p class="text-white/70 text-sm mb-4">Prefere falar direto?</p>
                         <a href="https://wa.me/5561981901379" target="_blank" rel="noopener"
-                           class="inline-flex items-center gap-3 bg-white/10 border border-white/30 px-6 py-3 rounded-full font-bold hover:bg-white/20 transition-all text-sm">
+                           class="inline-flex items-center gap-3 btn-cta-on-sky px-6 py-3 rounded-full font-bold text-sm">
                             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.554 4.122 1.528 5.855L0 24l6.335-1.508A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.006-1.374l-.36-.213-3.727.977.993-3.63-.235-.374A9.818 9.818 0 1112 21.818z"/></svg>
                             (61) 98190-1379 · WhatsApp
                         </a>
@@ -293,8 +302,7 @@ import WhatsAppButton from '../components/WhatsAppButton.astro';
                         <p id="lead-form-feedback" class="text-xs text-slate-400 hidden" role="status" aria-live="polite"></p>
                         <p class="text-xs text-slate-400">Ao enviar, você concorda em ser contatado para proposta comercial.</p>
                         <button id="lead-submit-home" type="submit"
-                                class="w-full py-4 rounded-xl font-bold text-white transition-all hover:opacity-90 hover:shadow-lg"
-                                style="background: var(--sky);"
+                                class="w-full py-4 rounded-xl font-bold btn-cta-form"
                                 data-track-event="submit_lead_form_home">
                             Enviar e receber diagnóstico →
                         </button>
