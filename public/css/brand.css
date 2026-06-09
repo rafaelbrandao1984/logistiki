@@ -665,3 +665,54 @@ nav.site-nav button.transition:hover {
     padding-bottom: 3rem;
   }
 }
+
+/* Cards da seção Equipe / Fundadores */
+.equipe-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--white);
+  border-radius: 1rem;
+  border: 1px solid rgba(201, 167, 53, 0.25);
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(6, 41, 74, 0.08);
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+.equipe-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 24px 48px rgba(6, 41, 74, 0.12);
+}
+
+.equipe-card__photo {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 4 / 5;
+  background: var(--light-gray);
+}
+
+.equipe-card__photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  transition: transform 0.5s ease;
+}
+
+.equipe-card:hover .equipe-card__photo img {
+  transform: scale(1.03);
+}
+
+.equipe-card__body {
+  padding: 1.75rem 1.5rem 2rem;
+  border-top: 3px solid var(--sky);
+}
+
+.equipe-card:nth-child(2) .equipe-card__body {
+  border-top-color: var(--gold-solid);
+}
+
+.equipe-brand-moment {
+  background: linear-gradient(135deg, var(--sky-soft), rgba(201, 167, 53, 0.08));
+}

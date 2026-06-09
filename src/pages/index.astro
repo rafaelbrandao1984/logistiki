@@ -41,6 +41,10 @@ import WhatsAppButton from '../components/WhatsAppButton.astro';
                     <p class="text-slate-600 mb-8 text-lg leading-relaxed text-justify">
                         Quando o projeto exige sistemas, certificação digital ou suporte operacional, trabalhamos com parceiros especializados. Essa estrutura mantém a Logistiki como marca principal e leva soluções complementares para uma área dedicada de parcerias.
                     </p>
+                    <a href="#equipe" class="inline-flex items-center gap-2 text-sm font-bold uppercase tracking-widest text-sky hover:text-navy transition">
+                        Conheça os fundadores
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+                    </a>
                 </div>
                 <div class="relative group order-1 md:order-2">
                     <div class="absolute -inset-4 rounded-xl" style="background: rgba(41,171,226,0.08);"></div>
@@ -52,6 +56,89 @@ import WhatsAppButton from '../components/WhatsAppButton.astro';
                         <div class="w-12 h-1 mx-auto mt-6" style="background: var(--gold-solid);"></div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="equipe" class="py-16 md:py-24 bg-light-gray overflow-hidden">
+        <div class="container mx-auto px-6 lg:px-20">
+            <div class="text-center mb-12 md:mb-16">
+                <span class="text-xs uppercase tracking-[0.35em] font-bold text-sky">Nossa história</span>
+                <h2 class="text-3xl sm:text-4xl mt-4 mb-4 leading-snug text-navy">Quem está por trás da <span class="text-gold italic">Logistiki</span></h2>
+                <p class="text-slate-600 max-w-2xl mx-auto leading-relaxed">Desde 2014 em Brasília, unimos experiência contábil, visão estratégica e atendimento próximo para empresas, campanhas e organizações do Terceiro Setor.</p>
+                <div class="w-24 h-1 bg-gold mx-auto mt-6"></div>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center mb-16 md:mb-20">
+                <div class="relative">
+                    <div class="absolute -inset-4 rounded-2xl" style="background: rgba(41,171,226,0.08);" aria-hidden="true"></div>
+                    <img
+                        src="/images/equipe/fundadores-juntos.png"
+                        alt="Marinho Gonçalves Lisboa e Mauro Domingos de Sousa, fundadores da Logistiki"
+                        class="relative w-full rounded-2xl shadow-2xl border border-brand-gold-30 object-cover aspect-[4/5] object-top"
+                        loading="lazy"
+                        width="800"
+                        height="1000"
+                    >
+                </div>
+                <div>
+                    <p class="text-slate-600 text-lg leading-relaxed text-justify mb-6">
+                        A Logistiki nasceu da convicção de que contabilidade vai além do cumprimento de obrigações: é inteligência aplicada à gestão. Em mais de uma década no Distrito Federal, construímos uma operação que combina rigor técnico com linguagem clara para quem precisa decidir com segurança.
+                    </p>
+                    <p class="text-slate-600 text-lg leading-relaxed text-justify mb-8">
+                        Marinho e Mauro lideram uma equipe preparada para cenários complexos — da conformidade fiscal ao SPCA eleitoral, do BPO financeiro às rotinas do Terceiro Setor — sempre com o cliente no centro do processo.
+                    </p>
+                    <div class="equipe-brand-moment rounded-xl overflow-hidden border border-brand-gold-30 shadow-lg max-w-sm">
+                        <img
+                            src="/images/equipe/cartao-logistiki.png"
+                            alt="Cartão de visitas Logistiki — Gestão e Inteligência Contábil"
+                            class="w-full object-cover aspect-[16/10] object-center"
+                            loading="lazy"
+                            width="640"
+                            height="400"
+                        >
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 lg:gap-10">
+                <article class="equipe-card group">
+                    <div class="equipe-card__photo">
+                        <img
+                            src="/images/equipe/marinho-lisboa.png"
+                            alt="Marinho Gonçalves Lisboa"
+                            loading="lazy"
+                            width="600"
+                            height="750"
+                        >
+                    </div>
+                    <div class="equipe-card__body">
+                        <p class="text-xs uppercase tracking-[0.35em] font-bold text-sky mb-2">Sócio-fundador</p>
+                        <h3 class="text-2xl text-navy mb-3">Marinho Gonçalves Lisboa</h3>
+                        <p class="text-slate-600 leading-relaxed text-justify">
+                            Contador com trajetória em gestão fiscal e consultoria empresarial no DF. Na Logistiki, conduz projetos que exigem leitura estratégica dos números e alinhamento entre contabilidade, planejamento tributário e rotina do cliente.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="equipe-card group">
+                    <div class="equipe-card__photo">
+                        <img
+                            src="/images/equipe/mauro-sousa.png"
+                            alt="Mauro Domingos de Sousa"
+                            loading="lazy"
+                            width="600"
+                            height="750"
+                        >
+                    </div>
+                    <div class="equipe-card__body">
+                        <p class="text-xs uppercase tracking-[0.35em] font-bold text-gold mb-2">Sócio-fundador</p>
+                        <h3 class="text-2xl text-navy mb-3">Mauro Domingos de Sousa</h3>
+                        <p class="text-slate-600 leading-relaxed text-justify">
+                            Responsável pela gestão e expansão da Logistiki, com foco em relacionamento, estrutura operacional e especialidades como contabilidade eleitoral e Terceiro Setor. Garante que cada atendimento traduza técnica em confiança e previsibilidade.
+                        </p>
+                    </div>
+                </article>
             </div>
         </div>
     </section>
