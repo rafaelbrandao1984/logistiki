@@ -716,3 +716,22 @@ nav.site-nav button.transition:hover {
 .equipe-brand-moment {
   background: linear-gradient(135deg, var(--sky-soft), rgba(201, 167, 53, 0.08));
 }
+
+.equipe-brand-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+  max-width: 28rem;
+}
+
+@media (min-width: 640px) {
+  .equipe-brand-row {
+    gap: 1rem;
+    max-width: 32rem;
+  }
+}
+
+.equipe-brand-row img {
+  aspect-ratio: 4 / 3;
+  min-height: 7rem;
+}
