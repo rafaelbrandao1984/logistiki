@@ -57,6 +57,17 @@ const {
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
       gtag('config', 'G-72VT7EWDF1');
+
+      window.trackContactConversion = function () {
+        gtag('event', 'conversion_event_contact');
+      };
+
+      document.addEventListener('click', function (event) {
+        const link = event.target instanceof Element
+          ? event.target.closest('a[href*="wa.me"]')
+          : null;
+        if (link) window.trackContactConversion();
+      });
     </script>
 </head>
 <body class="bg-white text-slate-900 overflow-x-hidden">

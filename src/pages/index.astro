@@ -445,6 +445,7 @@ import WhatsAppButton from '../components/WhatsAppButton.astro';
 
         if (typeof gtag === 'function') {
             gtag('event', 'submit_lead_form_home', { form_id: 'lead-form-home' });
+            gtag('event', 'conversion_event_contact');
         }
 
         window.open(
